@@ -1,8 +1,6 @@
 package il.ac.haifa.is.datacomms.hw1;
 
-import java.text.SimpleDateFormat;
 import java.time.LocalTime;
-import java.util.Date;
 
 /**
  * Application's main class.

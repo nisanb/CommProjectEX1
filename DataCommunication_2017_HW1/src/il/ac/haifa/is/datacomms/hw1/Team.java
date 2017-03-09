@@ -1,8 +1,6 @@
 package il.ac.haifa.is.datacomms.hw1;
 
-import java.time.LocalTime;
 import java.util.ArrayList;
-import java.util.Random;
 
 /**
  * Class representation of a team in the amazing race.
