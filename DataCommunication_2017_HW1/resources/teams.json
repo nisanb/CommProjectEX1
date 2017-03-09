@@ -1,0 +1,189 @@
+[
+	{
+		"id" : 0,
+		"Members" : [
+			{
+				"firstName" : "Yuli",
+				"lastName" : "Dechen",
+				"physicalScore" : 73,
+				"mentalScore" : 56
+			},
+			{
+				"firstName" : "Rahmi",
+				"lastName" : "Girish",
+				"physicalScore" : 67,
+				"mentalScore" : 78
+			}
+		]
+	},
+	{
+		"id" : 1,
+		"Members" : [
+			{
+				"firstName" : "Hans",
+				"lastName" : "Emanuel",
+				"physicalScore" : 58,
+				"mentalScore" : 91
+			},
+			{
+				"firstName" : "Elton",
+				"lastName" : "Victor",
+				"physicalScore" : 69,
+				"mentalScore" : 65
+			}
+		]
+	},
+	{
+		"id" : 2,
+		"Members" : [
+			{
+				"firstName" : "Jana",
+				"lastName" : "Cleve",
+				"physicalScore" : 43,
+				"mentalScore" : 88
+			},
+			{
+				"firstName" : "Lore",
+				"lastName" : "Cirino",
+				"physicalScore" : 44,
+				"mentalScore" : 72
+			}
+		]
+	},
+	{
+		"id" : 3,
+		"Members" : [
+			{
+				"firstName" : "Ema",
+				"lastName" : "Major",
+				"physicalScore" : 56,
+				"mentalScore" : 43
+			},
+			{
+				"firstName" : "Filipa",
+				"lastName" : "Xanthos",
+				"physicalScore" : 77,
+				"mentalScore" : 58
+			}
+		]
+	},
+	{
+		"id" : 4,
+		"Members" : [
+			{
+				"firstName" : "Helena",
+				"lastName" : "Sala",
+				"physicalScore" : 36,
+				"mentalScore" : 94
+			},
+			{
+				"firstName" : "Nicole",
+				"lastName" : "McKenzie",
+				"physicalScore" : 45,
+				"mentalScore" : 89
+			}
+		]
+	},
+	{
+		"id" : 5,
+		"Members" : [
+			{
+				"firstName" : "Jonas",
+				"lastName" : "Herbert",
+				"physicalScore" : 67,
+				"mentalScore" : 75
+			},
+			{
+				"firstName" : "Andreas",
+				"lastName" : "Putnam",
+				"physicalScore" : 85,
+				"mentalScore" : 71
+			}
+		]
+	},
+	{
+		"id" : 6,
+		"Members" : [
+			{
+				"firstName" : "Ulf",
+				"lastName" : "Hurst",
+				"physicalScore" : 65,
+				"mentalScore" : 24
+			},
+			{
+				"firstName" : "Sigifrid",
+				"lastName" : "Cowden",
+				"physicalScore" : 23,
+				"mentalScore" : 26
+			}
+		]
+	},
+	{
+		"id" : 7,
+		"Members" : [
+			{
+				"firstName" : "Christen",
+				"lastName" : "Shepherd",
+				"physicalScore" : 64,
+				"mentalScore" : 76
+			},
+			{
+				"firstName" : "Faustino",
+				"lastName" : "Garrard",
+				"physicalScore" : 54,
+				"mentalScore" : 59
+			}
+		]
+	},
+	{
+		"id" : 8,
+		"Members" : [
+			{
+				"firstName" : "Lucie",
+				"lastName" : "Arts",
+				"physicalScore" : 86,
+				"mentalScore" : 42
+			},
+			{
+				"firstName" : "Khaled",
+				"lastName" : "Baumhauer",
+				"physicalScore" : 97,
+				"mentalScore" : 55
+			}
+		]
+	},
+	{
+		"id" : 9,
+		"Members" : [
+			{
+				"firstName" : "Pastor",
+				"lastName" : "Wilcox",
+				"physicalScore" : 96,
+				"mentalScore" : 79
+			},
+			{
+				"firstName" : "Ohad",
+				"lastName" : "Piatek",
+				"physicalScore" : 56,
+				"mentalScore" : 95
+			}
+		]
+	},
+	{
+		"id" : 10,
+		"Members" : [
+			{
+				"firstName" : "Stella",
+				"lastName" : "Blaha",
+				"physicalScore" : 56,
+				"mentalScore" : 25
+			},
+			{
+				"firstName" : "Theophilus",
+				"lastName" : "Profeta",
+				"physicalScore" : 93,
+				"mentalScore" : 81
+			}
+		]
+	}
+]
