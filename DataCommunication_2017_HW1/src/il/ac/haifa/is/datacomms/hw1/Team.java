@@ -8,7 +8,7 @@ import java.util.Random;
  * Class representation of a team in the amazing race.
  * Consists of 2 contestants.
  */
-public final class Team {
+public final class Team extends Thread{
 	
 	//-------------------------------------------------------------------
 	//-----------------------------fields--------------------------------
@@ -35,6 +35,32 @@ public final class Team {
 		members = new ArrayList<>();
 	}
 	
+	@Override
+	public void run() {
+		String name = String.valueOf(this.getTeamId());
+		setName(name);
+		Main.Log("Team "+getName()+" joined the race!");
+		
+		//Handle first RM
+		RouteMarker rm = RouteMarker.getFirstRouteMarker();
+		
+		//Drive to the RM
+		driveTo(rm);
+		
+		//Team gets to the first marker handler
+		try {
+			rm.handleArrivalOf(this);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		//Go through the whole race
+		
+		
+		
+	}
+	
 	//-------------------------------------------------------------------
 	//-------------------------functionality-----------------------------
 	//-------------------------------------------------------------------
@@ -42,9 +68,17 @@ public final class Team {
 	/**
 	 * drives to destination.
 	 * @param marker route marker to drive to.
+	 * @throws InterruptedException 
 	 */
-	private void driveTo(RouteMarker marker) {
-		// TODO
+	private void driveTo(RouteMarker marker){
+		Double seconds = marker.getDistance()%10;
+		long millis = (long) (seconds*1000);
+		Main.Log("Team "+getName()+" driving to marker "+marker.getId()+"(Dist: "+marker.getDistance()+"km) for "+millis+" milliseconds");
+		try {
+			sleep(millis);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 	}
 	
 	/**

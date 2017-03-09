@@ -1,6 +1,7 @@
 package il.ac.haifa.is.datacomms.hw1;
 
 import java.text.SimpleDateFormat;
+import java.time.LocalTime;
 import java.util.Date;
 
 /**
@@ -10,12 +11,15 @@ public final class Main {
 	private Main() {}
 	
 	public static void main(String[] args) {
-		AmazingRace.getInstance().simulate();
+		try{
+			AmazingRace.getInstance().simulate();
+			
+		} catch(Exception e){
+			e.printStackTrace();
+		}
 	}
 	
-	public static void Log(String str){
-		SimpleDateFormat sdf = new SimpleDateFormat("hh:mm:ss");
-		
-		System.out.println(sdf.format(new Date())+" - "+str);
+	public static void Log(String str){		
+		System.out.println(LocalTime.now()+" - "+str);
 	}
 }

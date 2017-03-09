@@ -51,11 +51,19 @@ public final class AmazingRace {
 	
 	/**
 	 * simulates an amazing race: initializes it, starts it and prints its results.
+	 * @throws InterruptedException 
 	 */
-	public void simulate() {
+	public void simulate() throws InterruptedException {
 		Main.Log("Starting simulating race");
 		initTeams();
 		initRouteMarkers();
+		
+		//Init threads
+		for(Team t : teams){
+			t.start();
+		}
+			
+		
 		
 		  
 	}

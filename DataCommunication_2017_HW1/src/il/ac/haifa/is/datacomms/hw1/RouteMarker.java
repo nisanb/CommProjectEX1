@@ -63,10 +63,20 @@ public final class RouteMarker {
 	 * <br>otherwise, forces team to wait until they are met.
 	 * @param team arriving team.
 	 * @return route marker's clue type.
+	 * @throws InterruptedException 
 	 */
-	public E_ClueType handleArrivalOf(Team team) {
+	public E_ClueType handleArrivalOf(Team team) throws InterruptedException {
+		Main.Log("Team "+team.getName()+" arrived to marker "+getId()+". Checking for approval..");
+		//Check if there is space in the RM
+		while(visitingTeams.size()>2)
+				team.sleep(10);
+	
+		
+		Main.Log("Team "+team.getName()+" approved to enter marker "+getId());
+		visitingTeams.add(team);
+		
 		return clue;
-		// TODO
+
 	}
 	
 	/**
@@ -121,8 +131,18 @@ public final class RouteMarker {
 	 * @see AmazingRace#getRouteMarkers()
 	 */
 	private static RouteMarker getNextRouteMarker(RouteMarker marker) {
-		return marker;
-		// TODO
+		RouteMarker toReturn = null;
+		Boolean flag = false; //True when marker is found
+		for(RouteMarker tmpRM : AmazingRace.getInstance().getRouteMarkers()){
+			if(flag){
+				toReturn = tmpRM;
+				break;
+			}
+			if(tmpRM.equals(marker))
+				flag=true;
+		}
+		
+		return toReturn;
 	}
 	
 	/**
