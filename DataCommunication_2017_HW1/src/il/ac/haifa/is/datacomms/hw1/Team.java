@@ -1,107 +1,151 @@
 package il.ac.haifa.is.datacomms.hw1;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 /**
- * Class representation of a team in the amazing race.
- * Consists of 2 contestants.
+ * Class representation of a team in the amazing race. Consists of 2
+ * contestants.
  */
-public final class Team extends Thread{
-	
-	//-------------------------------------------------------------------
-	//-----------------------------fields--------------------------------
-	//-------------------------------------------------------------------
-	
-	/**maximum members allowed in a team.*/
+public final class Team extends Thread {
+
+	// -------------------------------------------------------------------
+	// -----------------------------fields--------------------------------
+	// -------------------------------------------------------------------
+
+	/** maximum members allowed in a team. */
 	private static final int MAX_MEMBERS = 2;
-	
-	//**team's id.*/
+
+	// **team's id.*/
 	private final int teamId;
-	
-	/**team's members.*/
+
+	/** team's members. */
 	private ArrayList<Contestant> members;
 
-	//-------------------------------------------------------------------
-	//-------------------------constructors------------------------------
-	//-------------------------------------------------------------------
-	
+	// -------------------------------------------------------------------
+	// -------------------------constructors------------------------------
+	// -------------------------------------------------------------------
+
 	/**
-	 * @param id team's id.
+	 * @param id
+	 *            team's id.
 	 */
 	public Team(int id) {
 		teamId = id;
 		members = new ArrayList<>();
 	}
-	
+
 	@Override
 	public void run() {
 		String name = String.valueOf(this.getTeamId());
 		setName(name);
-		Main.Log("Team "+getName()+" joined the race!");
-		
-		//Handle first RM
+		Main.Log("Team " + getName() + " joined the race!");
+
+		// Handle first RM
 		RouteMarker rm = RouteMarker.getFirstRouteMarker();
-		
-		//Drive to the RM
-		driveTo(rm);
-		
-		//Team gets to the first marker handler
-		try {
-			rm.handleArrivalOf(this);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+		while (rm != null) {
+			driveTo(rm);
+			try {
+				handleClue(rm.handleArrivalOf(this));
+
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			rm = rm.handleDepartureOf(this);
 		}
-		
-		//Go through the whole race
-		
-		
-		
 	}
-	
-	//-------------------------------------------------------------------
-	//-------------------------functionality-----------------------------
-	//-------------------------------------------------------------------
-	
+
+	// -------------------------------------------------------------------
+	// -------------------------functionality-----------------------------
+	// -------------------------------------------------------------------
+
+	/**
+	 * This method will handle the clue given to the team
+	 * 
+	 * @param clueType
+	 */
+	private void handleClue(E_ClueType clueType) {
+		Main.Log("Team " + getName() + " received clue: " + clueType);
+		switch (clueType) {
+		case DETOUR:
+			if (getAverageMentalScore() > getAveragePhysicalScore())
+				performMentalTask();
+			else
+				performPhysicalTask();
+			break;
+
+		case ROADBLOCK:
+			getRandomMember().performCombinedTask();
+			break;
+		}
+	}
+
 	/**
 	 * drives to destination.
-	 * @param marker route marker to drive to.
-	 * @throws InterruptedException 
+	 * 
+	 * @param marker
+	 *            route marker to drive to.
+	 * @throws InterruptedException
 	 */
-	private void driveTo(RouteMarker marker){
-		Double seconds = marker.getDistance()%10;
-		long millis = (long) (seconds*1000);
-		Main.Log("Team "+getName()+" driving to marker "+marker.getId()+"(Dist: "+marker.getDistance()+"km) for "+millis+" milliseconds");
+	private void driveTo(RouteMarker marker) {
+		Double seconds = marker.getDistance() % 10;
+		long millis = (long) (seconds * 1000);
+		Main.Log("Team " + getName() + " driving to marker " + marker.getId() + "(Dist: " + marker.getDistance()
+				+ "km) for " + millis + " milliseconds");
 		try {
 			sleep(millis);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
 	}
-	
+
 	/**
 	 * performs a physical task.
 	 */
 	private void performPhysicalTask() {
-		// TODO
+		Double toWait = (100-getAveragePhysicalScore())%10;
+		if(toWait<1) toWait=1.0;
+		long sleepTime = Double.doubleToLongBits(toWait * 1000);
+		try {
+			Main.Log("Team "+getName()+" performing physical task for "+toWait+" seconds.");
+			sleep((long) (toWait*1000));
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 	}
-	
+
 	/**
 	 * performs a mental task.
 	 */
 	private void performMentalTask() {
-		// TODO
+		Double toWait = (100-getAverageMentalScore())%10;
+		if(toWait<1) toWait=1.0;
+		long sleepTime = Double.doubleToLongBits(toWait * 1000);
+		try {
+			Main.Log("Team "+getName()+" performing physical task for "+toWait+" seconds.");
+			sleep((long) (toWait*1000));
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 	}
-	
-	//-------------------------------------------------------------------
-	//----------------------------utility--------------------------------
-	//-------------------------------------------------------------------	
-	
+
+	private Contestant getRandomMember() {
+		Random r = new Random();
+		return members.get(r.nextInt(2));
+	}
+
+	// -------------------------------------------------------------------
+	// ----------------------------utility--------------------------------
+	// -------------------------------------------------------------------
+
 	/**
 	 * adds a member to team.
-	 * @param contestant contestant to be added to team.
+	 * 
+	 * @param contestant
+	 *            contestant to be added to team.
 	 * @return reference to this instance.
-	 * @see <a href='https://en.wikipedia.org/wiki/Fluent_interface'>Fluent Interface Pattern</a> 
+	 * @see <a href='https://en.wikipedia.org/wiki/Fluent_interface'>Fluent
+	 *      Interface Pattern</a>
 	 */
 	public Team addMember(Contestant contestant) {
 		if (members.size() == MAX_MEMBERS)
@@ -109,11 +153,11 @@ public final class Team extends Thread{
 		members.add(contestant);
 		return this;
 	}
-	
-	//-------------------------------------------------------------------
-	//----------------------------getters--------------------------------
-	//-------------------------------------------------------------------
-	
+
+	// -------------------------------------------------------------------
+	// ----------------------------getters--------------------------------
+	// -------------------------------------------------------------------
+
 	/**
 	 * @return team's first member, null if team has no members.
 	 */
@@ -122,7 +166,7 @@ public final class Team extends Thread{
 			return null;
 		return members.get(0);
 	}
-	
+
 	/**
 	 * @return team's second member, null if team has no members or just one.
 	 */
@@ -131,36 +175,36 @@ public final class Team extends Thread{
 			return null;
 		return members.get(1);
 	}
-	
+
 	/**
 	 * @return team's id.
 	 */
 	public int getTeamId() {
 		return teamId;
 	}
-	
+
 	/**
 	 * @return team's average physical score.
 	 */
 	public double getAveragePhysicalScore() {
 		return (getMember1().getPhysicalScore() + getMember2().getPhysicalScore()) / 2.0;
 	}
-	
+
 	/**
 	 * @return team's average mental score.
 	 */
 	public double getAverageMentalScore() {
 		return (getMember1().getMentalScore() + getMember2().getMentalScore()) / 2.0;
 	}
-	
-	//-------------------------------------------------------------------
-	//----------------------------setters--------------------------------
-	//-------------------------------------------------------------------
-	
-	//-------------------------------------------------------------------
-	//---------------------------overrides-------------------------------
-	//-------------------------------------------------------------------
-	
+
+	// -------------------------------------------------------------------
+	// ----------------------------setters--------------------------------
+	// -------------------------------------------------------------------
+
+	// -------------------------------------------------------------------
+	// ---------------------------overrides-------------------------------
+	// -------------------------------------------------------------------
+
 	@Override
 	public boolean equals(Object obj) {
 		if (obj == this)
@@ -172,12 +216,11 @@ public final class Team extends Thread{
 		final Team other = (Team) obj;
 		return (other.teamId == this.teamId);
 	}
-	
+
 	@Override
 	public String toString() {
-		return String.format("Team [ id=%d, avgPhysicalScore=%.2f, avgMentalScore=%.2f, "
-				+ "\n\tmember1=%s, \n\tmember2=%s\n", 
-				teamId, getAveragePhysicalScore(), getAverageMentalScore(), 
-				getMember1(), getMember2());
+		return String.format(
+				"Team [ id=%d, avgPhysicalScore=%.2f, avgMentalScore=%.2f, " + "\n\tmember1=%s, \n\tmember2=%s\n",
+				teamId, getAveragePhysicalScore(), getAverageMentalScore(), getMember1(), getMember2());
 	}
 }

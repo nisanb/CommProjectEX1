@@ -67,7 +67,9 @@ public final class RouteMarker {
 		Main.Log("Team "+team.getName()+" arrived to marker "+getId()+". Checking for approval..");
 		//Check if there is space in the RM
 		while(visitingTeams.size()>2)
-				team.sleep(10);
+			team.sleep(10);
+		
+	
 	
 		
 		Main.Log("Team "+team.getName()+" approved to enter marker "+getId());
@@ -83,8 +85,14 @@ public final class RouteMarker {
 	 * @param team team leaving marker.
 	 * @return next marker to travel to, null if this is the final pit stop.
 	 */
-	public RouteMarker handleDepartureOf(Team team) {
-		return null;
+	public synchronized RouteMarker handleDepartureOf(Team team) {
+		
+		Main.Log("Team "+team.getName()+" at RM "+getLocationName()+" is leaving..");
+		
+		visitingTeams.remove(team);
+		visitedTeams.add(team);
+		//Remove the team from the marker
+		return getNextRouteMarker(this);
 		// TODO
 	}
 	

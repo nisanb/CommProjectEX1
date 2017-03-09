@@ -59,9 +59,9 @@ public final class AmazingRace {
 		initRouteMarkers();
 		
 		//Init threads
-		for(Team t : teams){
+		for(Team t : teams)
 			t.start();
-		}
+		
 			
 		
 		
