@@ -75,6 +75,7 @@ public final class Team extends Thread {
 			break;
 
 		case ROADBLOCK:
+			Main.Log("Performing a member roadblock task");
 			getRandomMember().performCombinedTask();
 			break;
 		}
@@ -120,7 +121,7 @@ public final class Team extends Thread {
 	private void performMentalTask() {
 		Double toWait = (100-getAverageMentalScore())%10;
 		if(toWait<1) toWait=1.0;
-		long sleepTime = Double.doubleToLongBits(toWait * 1000);
+		long sleepTime = Double.doubleToLongBits(toWait * 1000); 
 		try {
 			Main.Log("Team "+getName()+" performing physical task for "+toWait+" seconds.");
 			sleep((long) (toWait*1000));
@@ -131,6 +132,7 @@ public final class Team extends Thread {
 
 	private Contestant getRandomMember() {
 		Random r = new Random();
+		Main.Log("Giving random member: "+r);
 		return members.get(r.nextInt(2));
 	}
 

@@ -26,10 +26,10 @@ public final class RouteMarker {
 	private E_ClueType clue;
 	
 	/**teams visited marker in the past.*/
-	private ArrayList<Team> visitedTeams;
+	private volatile ArrayList<Team> visitedTeams;
 	
 	/**teams visiting marker currently.*/
-	private ArrayList<Team> visitingTeams;
+	private volatile ArrayList<Team> visitingTeams;
 	
 	//-------------------------------------------------------------------
 	//-------------------------constructors------------------------------
@@ -66,9 +66,11 @@ public final class RouteMarker {
 	public E_ClueType handleArrivalOf(Team team) throws InterruptedException {
 		Main.Log("Team "+team.getName()+" arrived to marker "+getId()+". Checking for approval..");
 		//Check if there is space in the RM
-		while(visitingTeams.size()>2)
-			team.sleep(10);
-		
+		while(visitingTeams.size()>2){
+			team.sleep(2000);
+			Main.Log("Team "+team.getName()+" is still waiting (Checkpoint: "+this.toString());
+			
+		}
 	
 	
 		
@@ -93,7 +95,6 @@ public final class RouteMarker {
 		visitedTeams.add(team);
 		//Remove the team from the marker
 		return getNextRouteMarker(this);
-		// TODO
 	}
 	
 	//-------------------------------------------------------------------

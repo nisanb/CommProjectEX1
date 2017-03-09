@@ -33,12 +33,12 @@ public final class Contestant implements Runnable{
 		Double toWait = (100-getCombinedScore())%10;
 		if(toWait<1) toWait=1.0;
 		long sleepTime = Double.doubleToLongBits(toWait * 1000);
-		try {
+//		try {
 			Main.Log("Member "+getName()+" performing combined task for "+toWait+" seconds.");
-			Thread.sleep(((long) (toWait*1000)));
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
+			//Thread.sleep(sleepTime);
+//		} catch (InterruptedException e) {
+//			e.printStackTrace();
+//		}
 		
 	}
 	

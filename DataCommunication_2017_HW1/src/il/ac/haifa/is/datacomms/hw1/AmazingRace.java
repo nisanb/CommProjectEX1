@@ -59,10 +59,16 @@ public final class AmazingRace {
 		initRouteMarkers();
 		
 		//Init threads
-		for(Team t : teams)
+		for(Team t : teams){
 			t.start();
+		}
 		
-			
+		//Make thread wait for all teams to finish the race
+		for(Team t : teams){
+			t.join();
+		}
+		
+		System.err.println("Finished Race?");	
 		
 		
 		  
