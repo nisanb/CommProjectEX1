@@ -112,26 +112,13 @@ public final class AmazingRace {
 				String rmLocation = obj.get("location").toString();
 				double rmDistance = Double.parseDouble(obj.get("distance").toString());
 				Integer rmClue = ((Number)(obj.get("clue"))).intValue();
-				E_ClueType rmClueType = E_ClueType.valueOf(rmClue.toString());
-				System.err.println(rmClueType);
-				return;
-//				RouteMarker rm = new RouteMarker(rmID, rmLocation, rmDistance, rmClue);
-//				Iterator<JSONObject> innerIterator = 
-//						((JSONArray) obj.get("Members")).iterator();
-//				while (innerIterator.hasNext()) {
-//					JSONObject member = innerIterator.next();
-//					team.addMember(new Contestant().setName(member.get("firstName") + " " + member.get("lastName"))
-//												.setPhysicalScore(((Number) member.get("physicalScore")).intValue())
-//												.setMentalScore(((Number) member.get("mentalScore")).intValue()));
-//				}
-				
-//				teams.add(team);
+				E_ClueType rmClueType = E_ClueType.getClueType(rmClue);
+				RouteMarker rm = new RouteMarker(rmID, rmLocation, rmDistance, rmClueType);
+				markers.add(rm);
 			}
 		} catch (IOException | ParseException e) {
 			e.printStackTrace();
 		}
-		
-	
 		
 		System.out.println(LocalTime.now() + 
 				" markers data fetched from file:\n\n" + markers + "\n"); // XXX

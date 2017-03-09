@@ -10,7 +10,9 @@ public enum E_ClueType {
 	/** contains 1 physical & 1 mental task to choose from performed by both contestant.*/
 	DETOUR ("Detour"),
 	/** contains 1 combined task, performed by one contestant.*/
-	ROADBLOCK ("Roadblock");
+	ROADBLOCK ("Roadblock"),
+	
+	UNDEFINED ("Undefined");
 	
 	/**for debugging purposes.*/
 	private String name;
@@ -24,5 +26,19 @@ public enum E_ClueType {
 		return name;
 	}
 	
-	
+	/**
+	 * This is a temporary method until we get answer from staff
+	 * @param i
+	 * @return
+	 */
+	public static E_ClueType getClueType(Integer i){
+		E_ClueType toReturn = E_ClueType.UNDEFINED;
+		switch(i){
+		case 0: toReturn =  E_ClueType.ROUTE_INFORMATION; break;
+		case 1: toReturn =  E_ClueType.DETOUR; break;
+		case 2: toReturn =  E_ClueType.ROADBLOCK; break;
+		}
+		
+		return toReturn;
+	}
 }
