@@ -67,7 +67,7 @@ public final class RouteMarker {
 		Main.Log("Team "+team.getName()+" arrived to marker "+getId()+". Checking for approval..");
 		//Check if there is space in the RM
 		while(visitingTeams.size()>2){
-			team.sleep(2000);
+			team.sleep(4000);
 			Main.Log("Team "+team.getName()+" is still waiting (Checkpoint: "+this.toString());
 			
 		}

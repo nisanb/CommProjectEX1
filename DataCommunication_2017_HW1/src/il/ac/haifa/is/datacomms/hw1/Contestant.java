@@ -3,7 +3,7 @@ package il.ac.haifa.is.datacomms.hw1;
 /**
  * Class representation of a contestant in the Amazing Race.
  */
-public final class Contestant implements Runnable{
+public final class Contestant{
 	
 	//-------------------------------------------------------------------
 	//-----------------------------fields--------------------------------
@@ -30,15 +30,17 @@ public final class Contestant implements Runnable{
 	 * performs a combined (both physical & mental) solo task.
 	 */
 	public void performCombinedTask() {
-		Double toWait = (100-getCombinedScore())%10;
+		Double toWait = (100-getCombinedScore()) / 10;
 		if(toWait<1) toWait=1.0;
-		long sleepTime = Double.doubleToLongBits(toWait * 1000);
-//		try {
+		long sleepTime = (long)(toWait * 1000);
+		try {
 			Main.Log("Member "+getName()+" performing combined task for "+toWait+" seconds.");
-			//Thread.sleep(sleepTime);
-//		} catch (InterruptedException e) {
-//			e.printStackTrace();
-//		}
+			Thread.sleep(sleepTime);
+			Main.Log("Member "+getName()+" finished the combined task!");
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+			Main.Log("HELP HELP HELP");
+		}
 		
 	}
 	
@@ -123,7 +125,5 @@ public final class Contestant implements Runnable{
 				name, physicalScore, mentalScore);
 	}
 
-	@Override
-	public void run() {
-	}
+	
 }

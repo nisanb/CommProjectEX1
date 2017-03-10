@@ -89,8 +89,8 @@ public final class Team extends Thread {
 	 * @throws InterruptedException
 	 */
 	private void driveTo(RouteMarker marker) {
-		Double seconds = marker.getDistance() % 10;
-		long millis = (long) (seconds * 1000);
+		Double seconds = marker.getDistance() / 10;
+		long millis =  (long)(seconds * 1000);
 		Main.Log("Team " + getName() + " driving to marker " + marker.getId() + "(Dist: " + marker.getDistance()
 				+ "km) for " + millis + " milliseconds");
 		try {
@@ -104,11 +104,11 @@ public final class Team extends Thread {
 	 * performs a physical task.
 	 */
 	private void performPhysicalTask() {
-		Double toWait = (100-getAveragePhysicalScore())%10;
+		Double toWait = (100-getAveragePhysicalScore())/10;
 		if(toWait<1) toWait=1.0;
-		long sleepTime = Double.doubleToLongBits(toWait * 1000);
+		long millis =  (long)(toWait * 1000);
 		try {
-			Main.Log("Team "+getName()+" performing physical task for "+toWait+" seconds.");
+			Main.Log("Team "+getName()+" performing physical task for "+toWait+" seconds ("+millis+" -  ("+(millis)/1000+").");
 			sleep((long) (toWait*1000));
 		} catch (InterruptedException e) {
 			e.printStackTrace();
@@ -119,11 +119,11 @@ public final class Team extends Thread {
 	 * performs a mental task.
 	 */
 	private void performMentalTask() {
-		Double toWait = (100-getAverageMentalScore())%10;
+		Double toWait = (100-getAverageMentalScore()) / 10;
 		if(toWait<1) toWait=1.0;
-		long sleepTime = Double.doubleToLongBits(toWait * 1000); 
+		long sleepTime = (long)(toWait * 1000); 
 		try {
-			Main.Log("Team "+getName()+" performing physical task for "+toWait+" seconds.");
+			Main.Log("Team "+getName()+" performing mental task for "+toWait+" seconds.");
 			sleep((long) (toWait*1000));
 		} catch (InterruptedException e) {
 			e.printStackTrace();

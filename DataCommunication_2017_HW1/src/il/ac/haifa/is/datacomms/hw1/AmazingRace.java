@@ -68,8 +68,10 @@ public final class AmazingRace {
 			t.join();
 		}
 		
-		System.err.println("Finished Race?");	
-		
+		System.out.println("===================================");
+		System.out.println("Race is finished. Printing standings.");	
+		System.out.println("===================================");
+		System.out.println(markers.get(markers.size()-1).getStandings());
 		
 		  
 	}
