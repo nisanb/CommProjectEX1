@@ -19,67 +19,69 @@ import org.json.simple.parser.ParseException;
  * Class representation of the Amazing Race.
  */
 public final class AmazingRace {
-	
-	//-------------------------------------------------------------------
-	//-----------------------------fields--------------------------------
-	//-------------------------------------------------------------------
+
+	// -------------------------------------------------------------------
+	// -----------------------------fields--------------------------------
+	// -------------------------------------------------------------------
 	private volatile static AmazingRace initiatedRace = null;
-	/**teams participating in the race.*/
+	/** teams participating in the race. */
 	private volatile List<Team> teams = new ArrayList<Team>();
-	
-	/**race's route markers.*/
+
+	/** race's route markers. */
 	private volatile List<RouteMarker> markers = new ArrayList<RouteMarker>();
 
-	//-------------------------------------------------------------------
-	//-------------------------constructors------------------------------
-	//-------------------------------------------------------------------
-	
+	// -------------------------------------------------------------------
+	// -------------------------constructors------------------------------
+	// -------------------------------------------------------------------
+
 	/**
 	 * singleton instance getter.
+	 * 
 	 * @return instance of AmazingRace.
 	 */
 	public static AmazingRace getInstance() {
-		if(initiatedRace==null)
+		if (initiatedRace == null)
 			initiatedRace = new AmazingRace();
-		
+
 		return initiatedRace;
 	}
-	
-	//-------------------------------------------------------------------
-	//-------------------------functionality-----------------------------
-	//-------------------------------------------------------------------
-	
+
+	// -------------------------------------------------------------------
+	// -------------------------functionality-----------------------------
+	// -------------------------------------------------------------------
+
 	/**
-	 * simulates an amazing race: initializes it, starts it and prints its results.
-	 * @throws InterruptedException 
+	 * simulates an amazing race: initializes it, starts it and prints its
+	 * results.
+	 * 
+	 * @throws InterruptedException
 	 */
 	public void simulate() throws InterruptedException {
 		Main.Log("Starting simulating race");
 		initTeams();
 		initRouteMarkers();
-		
-		//Init threads
-		for(Team t : teams){
+
+		// Init threads
+		for (Team t : teams) {
 			t.start();
 		}
-		
-		//Make thread wait for all teams to finish the race
-		for(Team t : teams){
+
+		// Make thread wait for all teams to finish the race
+		for (Team t : teams) {
 			t.join();
 		}
-		
+
 		System.out.println("===================================");
-		System.out.println("Race is finished. Printing standings.");	
+		System.out.println("Race is finished. Printing standings.");
 		System.out.println("===================================");
-		System.out.println(markers.get(markers.size()-1).getStandings());
-		
-		  
+		System.out.println(markers.get(markers.size() - 1).getStandings());
+
 	}
 
-	//-------------------------------------------------------------------
-	//----------------------------utility--------------------------------
-	//-------------------------------------------------------------------	
-	
+	// -------------------------------------------------------------------
+	// ----------------------------utility--------------------------------
+	// -------------------------------------------------------------------
+
 	/**
 	 * initializes teams. reads data from teams json file.
 	 */
@@ -88,30 +90,27 @@ public final class AmazingRace {
 		Main.Log("Importing teams from teams.json");
 		try (InputStream is = getClass().getResourceAsStream("/teams.json");
 				BufferedReader reader = new BufferedReader(new InputStreamReader(is))) {
-			Iterator<JSONObject> outerIterator = 
-					((JSONArray) new JSONParser().parse(reader)).iterator();
+			Iterator<JSONObject> outerIterator = ((JSONArray) new JSONParser().parse(reader)).iterator();
 			while (outerIterator.hasNext()) {
 				JSONObject obj = (JSONObject) outerIterator.next();
 				Team team = new Team(((Number) obj.get("id")).intValue());
-				Iterator<JSONObject> innerIterator = 
-						((JSONArray) obj.get("Members")).iterator();
+				Iterator<JSONObject> innerIterator = ((JSONArray) obj.get("Members")).iterator();
 				while (innerIterator.hasNext()) {
 					JSONObject member = innerIterator.next();
 					team.addMember(new Contestant().setName(member.get("firstName") + " " + member.get("lastName"))
-												.setPhysicalScore(((Number) member.get("physicalScore")).intValue())
-												.setMentalScore(((Number) member.get("mentalScore")).intValue()));
+							.setPhysicalScore(((Number) member.get("physicalScore")).intValue())
+							.setMentalScore(((Number) member.get("mentalScore")).intValue()));
 				}
-				
+
 				teams.add(team);
 			}
 		} catch (IOException | ParseException e) {
 			e.printStackTrace();
 		}
-		
-		System.out.println(LocalTime.now() + 
-				" teams data fetched from file:\n\n" + teams + "\n"); // XXX
+
+		System.out.println(LocalTime.now() + " teams data fetched from file:\n\n" + teams + "\n"); // XXX
 	}
-	
+
 	/**
 	 * initializes route markers. reads data from markers json file.
 	 */
@@ -120,14 +119,13 @@ public final class AmazingRace {
 		Main.Log("Importing Route Markers from markers.json");
 		try (InputStream is = getClass().getResourceAsStream("/markers.json");
 				BufferedReader reader = new BufferedReader(new InputStreamReader(is))) {
-			Iterator<JSONObject> outerIterator = 
-					((JSONArray) new JSONParser().parse(reader)).iterator();
+			Iterator<JSONObject> outerIterator = ((JSONArray) new JSONParser().parse(reader)).iterator();
 			while (outerIterator.hasNext()) {
 				JSONObject obj = (JSONObject) outerIterator.next();
-				byte rmID = ((Number)(obj.get("id"))).byteValue();
+				byte rmID = ((Number) (obj.get("id"))).byteValue();
 				String rmLocation = obj.get("location").toString();
 				double rmDistance = Double.parseDouble(obj.get("distance").toString());
-				Integer rmClue = ((Number)(obj.get("clue"))).intValue();
+				Integer rmClue = ((Number) (obj.get("clue"))).intValue();
 				E_ClueType rmClueType = getClueType(rmClue);
 				RouteMarker rm = new RouteMarker(rmID, rmLocation, rmDistance, rmClueType);
 				markers.add(rm);
@@ -135,42 +133,51 @@ public final class AmazingRace {
 		} catch (IOException | ParseException e) {
 			e.printStackTrace();
 		}
-		
-		System.out.println(LocalTime.now() + 
-				" markers data fetched from file:\n\n" + markers + "\n"); // XXX
+
+		System.out.println(LocalTime.now() + " markers data fetched from file:\n\n" + markers + "\n"); // XXX
 	}
-	
-	//-------------------------------------------------------------------
-	//----------------------------getters--------------------------------
-	//-------------------------------------------------------------------
-	
+
+	// -------------------------------------------------------------------
+	// ----------------------------getters--------------------------------
+	// -------------------------------------------------------------------
+
 	/**
 	 * @return an unmodifiable list of route markers.
 	 */
 	public List<RouteMarker> getRouteMarkers() {
 		return Collections.unmodifiableList(markers);
 	}
-	
+
 	/**
 	 * Returns clue type on given clue number
+	 * 
 	 * @param i
 	 * @return Clue Type
 	 */
-	public static E_ClueType getClueType(Integer i){
-		E_ClueType toReturn = E_ClueType.ROUTE_INFORMATION; //Configure default to route information since it does nothing
-		switch(i){
-		case 0: toReturn =  E_ClueType.ROUTE_INFORMATION; break;
-		case 1: toReturn =  E_ClueType.DETOUR; break;
-		case 2: toReturn =  E_ClueType.ROADBLOCK; break;
+	public static E_ClueType getClueType(Integer i) {
+		E_ClueType toReturn = E_ClueType.ROUTE_INFORMATION; // Configure default
+															// to route
+															// information since
+															// it does nothing
+		switch (i) {
+		case 0:
+			toReturn = E_ClueType.ROUTE_INFORMATION;
+			break;
+		case 1:
+			toReturn = E_ClueType.DETOUR;
+			break;
+		case 2:
+			toReturn = E_ClueType.ROADBLOCK;
+			break;
 		}
-		
+
 		return toReturn;
 	}
-	//-------------------------------------------------------------------
-	//----------------------------setters--------------------------------
-	//-------------------------------------------------------------------
-	
-	//-------------------------------------------------------------------
-	//---------------------------overrides-------------------------------
-	//-------------------------------------------------------------------
+	// -------------------------------------------------------------------
+	// ----------------------------setters--------------------------------
+	// -------------------------------------------------------------------
+
+	// -------------------------------------------------------------------
+	// ---------------------------overrides-------------------------------
+	// -------------------------------------------------------------------
 }

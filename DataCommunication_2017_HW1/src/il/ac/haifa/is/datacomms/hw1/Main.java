@@ -6,18 +6,19 @@ import java.time.LocalTime;
  * Application's main class.
  */
 public final class Main {
-	private Main() {}
-	
+	private Main() {
+	}
+
 	public static void main(String[] args) {
-		try{
+		try {
 			AmazingRace.getInstance().simulate();
-			
-		} catch(Exception e){
+
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
-	
-	public static void Log(String str){		
-		System.out.println(LocalTime.now()+" - "+str);
+
+	public static void Log(String str) {
+		System.out.println(LocalTime.now() + " - " + str);
 	}
 }

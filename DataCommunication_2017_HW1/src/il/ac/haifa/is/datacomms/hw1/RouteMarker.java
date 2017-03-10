@@ -3,43 +3,48 @@ package il.ac.haifa.is.datacomms.hw1;
 import java.util.ArrayList;
 
 /**
- * Class representation of a race's RouteMarker. 
- * Basically a checkpoint where teams get RouteInfo on next RouteMarker, 
- * and might need to perform tasks to be able to continue.
+ * Class representation of a race's RouteMarker. Basically a checkpoint where
+ * teams get RouteInfo on next RouteMarker, and might need to perform tasks to
+ * be able to continue.
  */
 public final class RouteMarker {
-	
-	//-------------------------------------------------------------------
-	//-----------------------------fields--------------------------------
-	//-------------------------------------------------------------------
-	
-	/**route marker's id.*/
-	private final byte id; 
-	
-	/**route marker's location name.*/
+
+	// -------------------------------------------------------------------
+	// -----------------------------fields--------------------------------
+	// -------------------------------------------------------------------
+
+	/** route marker's id. */
+	private final byte id;
+
+	/** route marker's location name. */
 	private String locationName;
-	
-	/**distance from previous route marker or race starting point in KM.*/
+
+	/** distance from previous route marker or race starting point in KM. */
 	private double distance;
-	
-	/**route marker's clue.*/
+
+	/** route marker's clue. */
 	private E_ClueType clue;
-	
-	/**teams visited marker in the past.*/
+
+	/** teams visited marker in the past. */
 	private volatile ArrayList<Team> visitedTeams;
-	
-	/**teams visiting marker currently.*/
+
+	/** teams visiting marker currently. */
 	private volatile ArrayList<Team> visitingTeams;
-	
-	//-------------------------------------------------------------------
-	//-------------------------constructors------------------------------
-	//-------------------------------------------------------------------
-	
+
+	// -------------------------------------------------------------------
+	// -------------------------constructors------------------------------
+	// -------------------------------------------------------------------
+
 	/**
-	 * @param id router marker's id.
-	 * @param locationName location name.
-	 * @param distance distance from previous marker or race starting point (if no previous marker exists).
-	 * @param clue route marker's clue type.
+	 * @param id
+	 *            router marker's id.
+	 * @param locationName
+	 *            location name.
+	 * @param distance
+	 *            distance from previous marker or race starting point (if no
+	 *            previous marker exists).
+	 * @param clue
+	 *            route marker's clue type.
 	 */
 	public RouteMarker(byte id, String locationName, double distance, E_ClueType clue) {
 		this.id = id;
@@ -49,142 +54,151 @@ public final class RouteMarker {
 		visitedTeams = new ArrayList<>();
 		visitingTeams = new ArrayList<>();
 	}
-	
-	//-------------------------------------------------------------------
-	//-------------------------functionality-----------------------------
-	//-------------------------------------------------------------------
-	
+
+	// -------------------------------------------------------------------
+	// -------------------------functionality-----------------------------
+	// -------------------------------------------------------------------
+
 	/**
-	 * handles a team's arrival. 
-	 * <p>if game conditions are met, registers team as active & 
-	 * hands out the marker's clue. 
-	 * <br>otherwise, forces team to wait until they are met.
-	 * @param team arriving team.
+	 * handles a team's arrival.
+	 * <p>
+	 * if game conditions are met, registers team as active & hands out the
+	 * marker's clue. <br>
+	 * otherwise, forces team to wait until they are met.
+	 * 
+	 * @param team
+	 *            arriving team.
 	 * @return route marker's clue type.
-	 * @throws InterruptedException 
+	 * @throws InterruptedException
 	 */
 	public E_ClueType handleArrivalOf(Team team) throws InterruptedException {
-		Main.Log("Team "+team.getName()+" arrived to RouteMarker "+getLocationName()+". Checking for approval..");
-		//Check if there is space in the RM
+		Main.Log("Team " + team.getName() + " arrived to RouteMarker " + getLocationName()
+				+ ". Checking for approval..");
+		// Check if there is space in the RM
 		synchronized (this) {
-			while(visitingTeams.size()>2){
-				Main.Log("Team "+team.getName()+" is waiting for RouteMarker "+getLocationName()+" to be available.");
+			while (visitingTeams.size() > 2) {
+				Main.Log("Team " + team.getName() + " is waiting for RouteMarker " + getLocationName()
+						+ " to be available.");
 				wait();
 			}
 		}
-	
-		
-		Main.Log("Team "+team.getName()+" approved to enter marker "+getLocationName());
+
+		Main.Log("Team " + team.getName() + " approved to enter marker " + getLocationName());
 		visitingTeams.add(team);
-		
+
 		return clue;
 
 	}
-	
+
 	/**
 	 * handles a team's departure.
-	 * <p>unregisters team and adds it to marker's history.
-	 * @param team team leaving marker.
+	 * <p>
+	 * unregisters team and adds it to marker's history.
+	 * 
+	 * @param team
+	 *            team leaving marker.
 	 * @return next marker to travel to, null if this is the final pit stop.
 	 */
 	public synchronized RouteMarker handleDepartureOf(Team team) {
-		
-		Main.Log("Team "+team.getName()+" at RM "+getLocationName()+" is leaving..");
+
+		Main.Log("Team " + team.getName() + " at RM " + getLocationName() + " is leaving..");
 		synchronized (this) {
 			visitingTeams.remove(team);
 			visitedTeams.add(team);
 			notifyAll();
 		}
-		
-		//Remove the team from the marker
+
+		// Remove the team from the marker
 		return getNextRouteMarker(this);
 	}
-	
-	//-------------------------------------------------------------------
-	//----------------------------utility--------------------------------
-	//-------------------------------------------------------------------	
-	
-	//-------------------------------------------------------------------
-	//----------------------------getters--------------------------------
-	//-------------------------------------------------------------------
-	
+
+	// -------------------------------------------------------------------
+	// ----------------------------utility--------------------------------
+	// -------------------------------------------------------------------
+
+	// -------------------------------------------------------------------
+	// ----------------------------getters--------------------------------
+	// -------------------------------------------------------------------
+
 	/**
 	 * @return route marker's id.
 	 */
 	public byte getId() {
 		return id;
 	}
-	
+
 	/**
 	 * @return route marker's location name.
 	 */
 	public String getLocationName() {
 		return locationName;
 	}
-	
+
 	/**
 	 * @return route marker's distance from previous marker (or starting point).
 	 */
 	public double getDistance() {
 		return distance;
 	}
-	
+
 	/**
 	 * @return first RouteMarker in race.
 	 */
 	public static RouteMarker getFirstRouteMarker() {
 		return AmazingRace.getInstance().getRouteMarkers().get(0);
 	}
-	
+
 	/**
 	 * @return next RouteMarker in race, or null if this is the final pit stop.
 	 * @see AmazingRace#getRouteMarkers()
 	 */
 	private static RouteMarker getNextRouteMarker(RouteMarker marker) {
 		RouteMarker toReturn = null;
-		Boolean flag = false; //True when marker is found
-		for(RouteMarker tmpRM : AmazingRace.getInstance().getRouteMarkers()){
-			if(flag){
+		Boolean flag = false; // True when marker is found
+		for (RouteMarker tmpRM : AmazingRace.getInstance().getRouteMarkers()) {
+			if (flag) {
 				toReturn = tmpRM;
 				break;
 			}
-			if(tmpRM.equals(marker))
-				flag=true;
+			if (tmpRM.equals(marker))
+				flag = true;
 		}
-		
+
 		return toReturn;
 	}
-	
+
 	/**
-	 * @return route marker's standings. 
-	 * <p>a string of teams in departure time order. 
-	 * first to leave is first in list. 
-	 * last to leave is last in list.
+	 * @return route marker's standings.
+	 *         <p>
+	 * 		a string of teams in departure time order. first to leave is
+	 *         first in list. last to leave is last in list.
 	 */
 	public String getStandings() {
 		String out = "";
 		for (int i = 0; i < visitedTeams.size(); i++)
-			out += (i+1) + ". " + visitedTeams.get(i);
+			out += (i + 1) + ". " + visitedTeams.get(i);
 		return out;
 	}
-	
-	//-------------------------------------------------------------------
-	//----------------------------setters--------------------------------
-	//-------------------------------------------------------------------
-	
+
+	// -------------------------------------------------------------------
+	// ----------------------------setters--------------------------------
+	// -------------------------------------------------------------------
+
 	/**
-	 * @param type clue type to be set.
+	 * @param type
+	 *            clue type to be set.
 	 * @return reference to this instance.
-	 * @see <a href='https://en.wikipedia.org/wiki/Fluent_interface'>Fluent Interface Pattern</a>
+	 * @see <a href='https://en.wikipedia.org/wiki/Fluent_interface'>Fluent
+	 *      Interface Pattern</a>
 	 */
 	public RouteMarker setClue(E_ClueType type) {
 		this.clue = type;
 		return this;
 	}
-	
-	//-------------------------------------------------------------------
-	//---------------------------overrides-------------------------------
-	//-------------------------------------------------------------------
+
+	// -------------------------------------------------------------------
+	// ---------------------------overrides-------------------------------
+	// -------------------------------------------------------------------
 
 	@Override
 	public boolean equals(Object obj) {
@@ -197,10 +211,10 @@ public final class RouteMarker {
 		final RouteMarker other = (RouteMarker) obj;
 		return (this.id == other.id);
 	}
-	
+
 	@Override
 	public String toString() {
-		return String.format("RouteMarker [ id=%d, location=%s, distance=%.2f, clue=%s ]\n", 
-				id, locationName, distance, clue);
+		return String.format("RouteMarker [ id=%d, location=%s, distance=%.2f, clue=%s ]\n", id, locationName, distance,
+				clue);
 	}
 }
