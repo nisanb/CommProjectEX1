@@ -64,16 +64,17 @@ public final class RouteMarker {
 	 * @throws InterruptedException 
 	 */
 	public E_ClueType handleArrivalOf(Team team) throws InterruptedException {
-		Main.Log("Team "+team.getName()+" arrived to marker "+getId()+". Checking for approval..");
+		Main.Log("Team "+team.getName()+" arrived to RouteMarker "+getLocationName()+". Checking for approval..");
 		//Check if there is space in the RM
-		while(visitingTeams.size()>2){
-			Team.sleep(10);
-			Main.Log("Team "+team.getName()+" is still waiting (Checkpoint: "+this.toString());
+		synchronized (this) {
+			while(visitingTeams.size()>2){
+				Main.Log("Team "+team.getName()+" is waiting for RouteMarker "+getLocationName()+" to be available.");
+				wait();
+			}
 		}
 	
-	
 		
-		Main.Log("Team "+team.getName()+" approved to enter marker "+getId());
+		Main.Log("Team "+team.getName()+" approved to enter marker "+getLocationName());
 		visitingTeams.add(team);
 		
 		return clue;
@@ -89,9 +90,12 @@ public final class RouteMarker {
 	public synchronized RouteMarker handleDepartureOf(Team team) {
 		
 		Main.Log("Team "+team.getName()+" at RM "+getLocationName()+" is leaving..");
+		synchronized (this) {
+			visitingTeams.remove(team);
+			visitedTeams.add(team);
+			notifyAll();
+		}
 		
-		visitingTeams.remove(team);
-		visitedTeams.add(team);
 		//Remove the team from the marker
 		return getNextRouteMarker(this);
 	}

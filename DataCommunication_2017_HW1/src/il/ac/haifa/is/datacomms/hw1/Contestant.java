@@ -30,12 +30,11 @@ public final class Contestant{
 	 * performs a combined (both physical & mental) solo task.
 	 */
 	public void performCombinedTask() {
-		Double toWait = (100-getCombinedScore()) / 10;
-		if(toWait<1) toWait=1.0;
-		long sleepTime = (long)(toWait * 1000);
+		long millis = (long)((100-getCombinedScore())*100);
+		if(millis<1000) millis=1000;
 		try {
-			Main.Log("Member "+getName()+" performing combined task for "+toWait+" seconds.");
-			Thread.sleep(sleepTime);
+			Main.Log("Member "+getName()+" performing combined task for "+millis+" millis.");
+			Thread.sleep(millis);
 			Main.Log("Member "+getName()+" finished the combined task!");
 		} catch (InterruptedException e) {
 			e.printStackTrace();
