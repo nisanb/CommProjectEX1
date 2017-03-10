@@ -128,7 +128,7 @@ public final class AmazingRace {
 				String rmLocation = obj.get("location").toString();
 				double rmDistance = Double.parseDouble(obj.get("distance").toString());
 				Integer rmClue = ((Number)(obj.get("clue"))).intValue();
-				E_ClueType rmClueType = E_ClueType.getClueType(rmClue);
+				E_ClueType rmClueType = getClueType(rmClue);
 				RouteMarker rm = new RouteMarker(rmID, rmLocation, rmDistance, rmClueType);
 				markers.add(rm);
 			}
@@ -151,6 +151,21 @@ public final class AmazingRace {
 		return Collections.unmodifiableList(markers);
 	}
 	
+	/**
+	 * Returns clue type on given clue number
+	 * @param i
+	 * @return Clue Type
+	 */
+	public static E_ClueType getClueType(Integer i){
+		E_ClueType toReturn = E_ClueType.ROUTE_INFORMATION; //Configure default to route information since it does nothing
+		switch(i){
+		case 0: toReturn =  E_ClueType.ROUTE_INFORMATION; break;
+		case 1: toReturn =  E_ClueType.DETOUR; break;
+		case 2: toReturn =  E_ClueType.ROADBLOCK; break;
+		}
+		
+		return toReturn;
+	}
 	//-------------------------------------------------------------------
 	//----------------------------setters--------------------------------
 	//-------------------------------------------------------------------
