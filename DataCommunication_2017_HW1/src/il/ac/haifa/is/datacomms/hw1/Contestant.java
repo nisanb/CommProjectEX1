@@ -39,7 +39,6 @@ public final class Contestant {
 			Main.Log("Member " + getName() + " finished the combined task!");
 		} catch (InterruptedException e) {
 			e.printStackTrace();
-			Main.Log("HELP HELP HELP");
 		}
 
 	}

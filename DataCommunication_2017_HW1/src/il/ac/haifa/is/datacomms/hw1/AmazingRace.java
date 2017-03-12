@@ -69,12 +69,13 @@ public final class AmazingRace {
 		// Make thread wait for all teams to finish the race
 		for (Team t : teams) {
 			t.join();
+			Main.Log("Team "+t.getName()+" has finished the race!");
 		}
 
-		System.out.println("===================================");
-		System.out.println("Race is finished. Printing standings.");
-		System.out.println("===================================");
-		System.out.println(markers.get(markers.size() - 1).getStandings());
+		Main.Log("===================================");
+		Main.Log("Race is finished. Printing standings.");
+		Main.Log("===================================");
+		Main.Log(markers.get(markers.size() - 1).getStandings());
 
 	}
 

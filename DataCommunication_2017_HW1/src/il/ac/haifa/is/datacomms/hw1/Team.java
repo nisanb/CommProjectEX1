@@ -1,7 +1,10 @@
 package il.ac.haifa.is.datacomms.hw1;
 
+import java.sql.Timestamp;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.Random;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Class representation of a team in the amazing race. Consists of 2
@@ -15,6 +18,8 @@ public final class Team extends Thread {
 
 	/** maximum members allowed in a team. */
 	private static final int MAX_MEMBERS = 2;
+	
+	private long startTime, endTime;
 
 	// **team's id.*/
 	private final int teamId;
@@ -37,6 +42,7 @@ public final class Team extends Thread {
 
 	@Override
 	public void run() {
+		startTime = new Date().getTime();
 		String name = String.valueOf(this.getTeamId());
 		setName(name);
 		Main.Log("Team " + getName() + " joined the race!");
@@ -53,6 +59,8 @@ public final class Team extends Thread {
 			}
 			rm = rm.handleDepartureOf(this);
 		}
+		
+		endTime = new Date().getTime();
 	}
 
 	// -------------------------------------------------------------------
@@ -134,8 +142,9 @@ public final class Team extends Thread {
 
 	private Contestant getRandomMember() {
 		Random r = new Random();
-		Main.Log("Giving random member: " + r);
-		return members.get(r.nextInt(2));
+		Contestant memberDiced = members.get(r.nextInt(2));
+		Main.Log("Team "+getName()+" draws random member: " + memberDiced);
+		return memberDiced;
 	}
 
 	// -------------------------------------------------------------------
@@ -156,6 +165,11 @@ public final class Team extends Thread {
 			throw new UnsupportedOperationException("team is full!");
 		members.add(contestant);
 		return this;
+	}
+	
+	public long getRaceTime(){
+		return TimeUnit.MILLISECONDS.toSeconds(endTime-startTime);
+		//return (endTime-startTime) / 1000;
 	}
 
 	// -------------------------------------------------------------------

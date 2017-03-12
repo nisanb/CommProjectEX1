@@ -99,7 +99,7 @@ public final class RouteMarker {
 	 *            team leaving marker.
 	 * @return next marker to travel to, null if this is the final pit stop.
 	 */
-	public synchronized RouteMarker handleDepartureOf(Team team) {
+	public RouteMarker handleDepartureOf(Team team) {
 
 		Main.Log("Team " + team.getName() + " at RM " + getLocationName() + " is leaving..");
 		synchronized (this) {
@@ -176,7 +176,7 @@ public final class RouteMarker {
 	public String getStandings() {
 		String out = "";
 		for (int i = 0; i < visitedTeams.size(); i++)
-			out += (i + 1) + ". " + visitedTeams.get(i);
+			out += (i + 1) + ". " + visitedTeams.get(i) + "Total Time: "+visitedTeams.get(i).getRaceTime()+" seconds.\n";
 		return out;
 	}
 
