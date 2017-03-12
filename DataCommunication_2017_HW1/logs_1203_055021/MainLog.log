@@ -1,0 +1,618 @@
+17:50:21.127 - Starting simulating race
+17:50:21.141 - Importing teams from teams.json
+17:50:21.164 - Importing Route Markers from markers.json
+17:50:21.170 - Team 3 joined the race!
+17:50:21.170 - Team 3 driving to marker 0(Dist: 2.6km) for 200 milliseconds
+17:50:21.171 - Team 1 joined the race!
+17:50:21.171 - Team 1 driving to marker 0(Dist: 2.6km) for 200 milliseconds
+17:50:21.172 - Team 0 joined the race!
+17:50:21.173 - Team 2 joined the race!
+17:50:21.173 - Team 0 driving to marker 0(Dist: 2.6km) for 200 milliseconds
+17:50:21.173 - Team 2 driving to marker 0(Dist: 2.6km) for 200 milliseconds
+17:50:21.174 - Team 4 joined the race!
+17:50:21.174 - Team 4 driving to marker 0(Dist: 2.6km) for 200 milliseconds
+17:50:21.175 - Team 5 joined the race!
+17:50:21.175 - Team 6 joined the race!
+17:50:21.175 - Team 5 driving to marker 0(Dist: 2.6km) for 200 milliseconds
+17:50:21.175 - Team 6 driving to marker 0(Dist: 2.6km) for 200 milliseconds
+17:50:21.176 - Team 8 joined the race!
+17:50:21.176 - Team 8 driving to marker 0(Dist: 2.6km) for 200 milliseconds
+17:50:21.176 - Team 10 joined the race!
+17:50:21.177 - Team 10 driving to marker 0(Dist: 2.6km) for 200 milliseconds
+17:50:21.177 - Team 9 joined the race!
+17:50:21.177 - Team 9 driving to marker 0(Dist: 2.6km) for 200 milliseconds
+17:50:21.177 - Team 7 joined the race!
+17:50:21.178 - Team 7 driving to marker 0(Dist: 2.6km) for 200 milliseconds
+17:50:21.371 - Team 3 arrived to RouteMarker Hula Valley. Checking for approval..
+17:50:21.371 - Team 3 approved to enter marker Hula Valley
+17:50:21.372 - Team 3 received clue: Route Information
+17:50:21.372 - Team 1 arrived to RouteMarker Hula Valley. Checking for approval..
+17:50:21.372 - Team 1 approved to enter marker Hula Valley
+17:50:21.372 - Team 1 received clue: Route Information
+17:50:21.373 - Team 1 at RM Hula Valley is leaving..
+17:50:21.373 - Team 1 driving to marker 1(Dist: 33.0km) for 3300 milliseconds
+17:50:21.373 - Team 0 arrived to RouteMarker Hula Valley. Checking for approval..
+17:50:21.373 - Team 0 approved to enter marker Hula Valley
+17:50:21.373 - Team 0 received clue: Route Information
+17:50:21.374 - Team 0 at RM Hula Valley is leaving..
+17:50:21.374 - Team 0 driving to marker 1(Dist: 33.0km) for 3300 milliseconds
+17:50:21.374 - Team 4 arrived to RouteMarker Hula Valley. Checking for approval..
+17:50:21.372 - Team 3 at RM Hula Valley is leaving..
+17:50:21.374 - Team 4 approved to enter marker Hula Valley
+17:50:21.374 - Team 2 arrived to RouteMarker Hula Valley. Checking for approval..
+17:50:21.375 - Team 3 driving to marker 1(Dist: 33.0km) for 3300 milliseconds
+17:50:21.375 - Team 2 approved to enter marker Hula Valley
+17:50:21.375 - Team 2 received clue: Route Information
+17:50:21.375 - Team 2 at RM Hula Valley is leaving..
+17:50:21.376 - Team 2 driving to marker 1(Dist: 33.0km) for 3300 milliseconds
+17:50:21.376 - Team 4 received clue: Route Information
+17:50:21.376 - Team 5 arrived to RouteMarker Hula Valley. Checking for approval..
+17:50:21.377 - Team 10 arrived to RouteMarker Hula Valley. Checking for approval..
+17:50:21.377 - Team 10 approved to enter marker Hula Valley
+17:50:21.378 - Team 10 received clue: Route Information
+17:50:21.378 - Team 10 at RM Hula Valley is leaving..
+17:50:21.378 - Team 10 driving to marker 1(Dist: 33.0km) for 3300 milliseconds
+17:50:21.378 - Team 9 arrived to RouteMarker Hula Valley. Checking for approval..
+17:50:21.377 - Team 6 arrived to RouteMarker Hula Valley. Checking for approval..
+17:50:21.377 - Team 8 arrived to RouteMarker Hula Valley. Checking for approval..
+17:50:21.376 - Team 4 at RM Hula Valley is leaving..
+17:50:21.378 - Team 5 approved to enter marker Hula Valley
+17:50:21.379 - Team 9 approved to enter marker Hula Valley
+17:50:21.379 - Team 9 received clue: Route Information
+17:50:21.379 - Team 9 at RM Hula Valley is leaving..
+17:50:21.379 - Team 7 arrived to RouteMarker Hula Valley. Checking for approval..
+17:50:21.380 - Team 7 is waiting for RouteMarker Hula Valley to be available.
+17:50:21.380 - Team 4 driving to marker 1(Dist: 33.0km) for 3300 milliseconds
+17:50:21.381 - Team 8 approved to enter marker Hula Valley
+17:50:21.381 - Team 8 received clue: Route Information
+17:50:21.381 - Team 8 at RM Hula Valley is leaving..
+17:50:21.382 - Team 8 driving to marker 1(Dist: 33.0km) for 3300 milliseconds
+17:50:21.381 - Team 6 approved to enter marker Hula Valley
+17:50:21.382 - Team 6 received clue: Route Information
+17:50:21.382 - Team 6 at RM Hula Valley is leaving..
+17:50:21.382 - Team 6 driving to marker 1(Dist: 33.0km) for 3300 milliseconds
+17:50:21.382 - Team 7 approved to enter marker Hula Valley
+17:50:21.382 - Team 9 driving to marker 1(Dist: 33.0km) for 3300 milliseconds
+17:50:21.383 - Team 7 received clue: Route Information
+17:50:21.383 - Team 7 at RM Hula Valley is leaving..
+17:50:21.380 - Team 5 received clue: Route Information
+17:50:21.383 - Team 7 driving to marker 1(Dist: 33.0km) for 3300 milliseconds
+17:50:21.383 - Team 5 at RM Hula Valley is leaving..
+17:50:21.383 - Team 5 driving to marker 1(Dist: 33.0km) for 3300 milliseconds
+17:50:24.673 - Team 1 arrived to RouteMarker Ramon Crater. Checking for approval..
+17:50:24.674 - Team 0 arrived to RouteMarker Ramon Crater. Checking for approval..
+17:50:24.674 - Team 0 approved to enter marker Ramon Crater
+17:50:24.675 - Team 1 approved to enter marker Ramon Crater
+17:50:24.678 - Team 0 received clue: Detour
+17:50:24.678 - Team 0 performing physical task for 3000 millis
+17:50:24.678 - Team 2 arrived to RouteMarker Ramon Crater. Checking for approval..
+17:50:24.679 - Team 2 approved to enter marker Ramon Crater
+17:50:24.679 - Team 2 received clue: Detour
+17:50:24.679 - Team 2 performing mental task for 2000 millis.
+17:50:24.679 - Team 10 arrived to RouteMarker Ramon Crater. Checking for approval..
+17:50:24.679 - Team 10 is waiting for RouteMarker Ramon Crater to be available.
+17:50:24.679 - Team 1 received clue: Detour
+17:50:24.679 - Team 1 performing mental task for 2200 millis.
+17:50:24.680 - Team 3 arrived to RouteMarker Ramon Crater. Checking for approval..
+17:50:24.680 - Team 3 is waiting for RouteMarker Ramon Crater to be available.
+17:50:24.681 - Team 4 arrived to RouteMarker Ramon Crater. Checking for approval..
+17:50:24.681 - Team 4 is waiting for RouteMarker Ramon Crater to be available.
+17:50:24.682 - Team 6 arrived to RouteMarker Ramon Crater. Checking for approval..
+17:50:24.682 - Team 6 is waiting for RouteMarker Ramon Crater to be available.
+17:50:24.682 - Team 8 arrived to RouteMarker Ramon Crater. Checking for approval..
+17:50:24.682 - Team 8 is waiting for RouteMarker Ramon Crater to be available.
+17:50:24.683 - Team 5 arrived to RouteMarker Ramon Crater. Checking for approval..
+17:50:24.683 - Team 5 is waiting for RouteMarker Ramon Crater to be available.
+17:50:24.685 - Team 7 arrived to RouteMarker Ramon Crater. Checking for approval..
+17:50:24.685 - Team 7 is waiting for RouteMarker Ramon Crater to be available.
+17:50:24.686 - Team 9 arrived to RouteMarker Ramon Crater. Checking for approval..
+17:50:24.687 - Team 9 is waiting for RouteMarker Ramon Crater to be available.
+17:50:26.679 - Team 2 at RM Ramon Crater is leaving..
+17:50:26.679 - Team 2 driving to marker 2(Dist: 28.0km) for 2800 milliseconds
+17:50:26.679 - Team 7 approved to enter marker Ramon Crater
+17:50:26.679 - Team 9 approved to enter marker Ramon Crater
+17:50:26.679 - Team 7 received clue: Detour
+17:50:26.679 - Team 9 received clue: Detour
+17:50:26.679 - Team 7 performing mental task for 3250 millis.
+17:50:26.679 - Team 9 performing mental task for 1300 millis.
+17:50:26.679 - Team 5 is waiting for RouteMarker Ramon Crater to be available.
+17:50:26.680 - Team 8 is waiting for RouteMarker Ramon Crater to be available.
+17:50:26.680 - Team 6 is waiting for RouteMarker Ramon Crater to be available.
+17:50:26.680 - Team 4 is waiting for RouteMarker Ramon Crater to be available.
+17:50:26.680 - Team 3 is waiting for RouteMarker Ramon Crater to be available.
+17:50:26.680 - Team 10 is waiting for RouteMarker Ramon Crater to be available.
+17:50:26.879 - Team 1 at RM Ramon Crater is leaving..
+17:50:26.886 - Team 10 is waiting for RouteMarker Ramon Crater to be available.
+17:50:26.886 - Team 3 is waiting for RouteMarker Ramon Crater to be available.
+17:50:26.887 - Team 4 is waiting for RouteMarker Ramon Crater to be available.
+17:50:26.887 - Team 6 is waiting for RouteMarker Ramon Crater to be available.
+17:50:26.888 - Team 8 is waiting for RouteMarker Ramon Crater to be available.
+17:50:26.888 - Team 5 is waiting for RouteMarker Ramon Crater to be available.
+17:50:26.888 - Team 1 driving to marker 2(Dist: 28.0km) for 2800 milliseconds
+17:50:27.678 - Team 0 at RM Ramon Crater is leaving..
+17:50:27.678 - Team 5 approved to enter marker Ramon Crater
+17:50:27.678 - Team 5 received clue: Detour
+17:50:27.678 - Team 5 performing physical task for 2400 millis
+17:50:27.679 - Team 8 is waiting for RouteMarker Ramon Crater to be available.
+17:50:27.679 - Team 6 is waiting for RouteMarker Ramon Crater to be available.
+17:50:27.679 - Team 4 is waiting for RouteMarker Ramon Crater to be available.
+17:50:27.687 - Team 3 is waiting for RouteMarker Ramon Crater to be available.
+17:50:27.687 - Team 10 is waiting for RouteMarker Ramon Crater to be available.
+17:50:27.687 - Team 0 driving to marker 2(Dist: 28.0km) for 2800 milliseconds
+17:50:27.979 - Team 9 at RM Ramon Crater is leaving..
+17:50:27.979 - Team 10 approved to enter marker Ramon Crater
+17:50:27.979 - Team 10 received clue: Detour
+17:50:27.979 - Team 10 performing physical task for 2550 millis
+17:50:27.979 - Team 3 is waiting for RouteMarker Ramon Crater to be available.
+17:50:27.979 - Team 4 is waiting for RouteMarker Ramon Crater to be available.
+17:50:27.979 - Team 9 driving to marker 2(Dist: 28.0km) for 2800 milliseconds
+17:50:27.979 - Team 6 is waiting for RouteMarker Ramon Crater to be available.
+17:50:27.980 - Team 8 is waiting for RouteMarker Ramon Crater to be available.
+17:50:29.479 - Team 2 arrived to RouteMarker Jerusalem Old City. Checking for approval..
+17:50:29.479 - Team 2 approved to enter marker Jerusalem Old City
+17:50:29.479 - Team 2 received clue: Route Information
+17:50:29.479 - Team 2 at RM Jerusalem Old City is leaving..
+17:50:29.480 - Team 2 driving to marker 3(Dist: 15.6km) for 1500 milliseconds
+17:50:29.688 - Team 1 arrived to RouteMarker Jerusalem Old City. Checking for approval..
+17:50:29.688 - Team 1 approved to enter marker Jerusalem Old City
+17:50:29.693 - Team 1 received clue: Route Information
+17:50:29.693 - Team 1 at RM Jerusalem Old City is leaving..
+17:50:29.693 - Team 1 driving to marker 3(Dist: 15.6km) for 1500 milliseconds
+17:50:29.931 - Team 7 at RM Ramon Crater is leaving..
+17:50:29.931 - Team 8 approved to enter marker Ramon Crater
+17:50:29.931 - Team 8 received clue: Detour
+17:50:29.931 - Team 8 performing physical task for 850 millis
+17:50:29.931 - Team 6 is waiting for RouteMarker Ramon Crater to be available.
+17:50:29.931 - Team 4 is waiting for RouteMarker Ramon Crater to be available.
+17:50:29.932 - Team 3 is waiting for RouteMarker Ramon Crater to be available.
+17:50:29.932 - Team 7 driving to marker 2(Dist: 28.0km) for 2800 milliseconds
+17:50:30.079 - Team 5 at RM Ramon Crater is leaving..
+17:50:30.079 - Team 3 approved to enter marker Ramon Crater
+17:50:30.079 - Team 4 is waiting for RouteMarker Ramon Crater to be available.
+17:50:30.079 - Team 6 is waiting for RouteMarker Ramon Crater to be available.
+17:50:30.079 - Team 3 received clue: Detour
+17:50:30.079 - Team 3 performing physical task for 3350 millis
+17:50:30.080 - Team 5 driving to marker 2(Dist: 28.0km) for 2800 milliseconds
+17:50:30.487 - Team 0 arrived to RouteMarker Jerusalem Old City. Checking for approval..
+17:50:30.487 - Team 0 approved to enter marker Jerusalem Old City
+17:50:30.487 - Team 0 received clue: Route Information
+17:50:30.487 - Team 0 at RM Jerusalem Old City is leaving..
+17:50:30.487 - Team 0 driving to marker 3(Dist: 15.6km) for 1500 milliseconds
+17:50:30.529 - Team 10 at RM Ramon Crater is leaving..
+17:50:30.529 - Team 6 approved to enter marker Ramon Crater
+17:50:30.529 - Team 6 received clue: Detour
+17:50:30.529 - Team 6 performing physical task for 5600 millis
+17:50:30.529 - Team 4 is waiting for RouteMarker Ramon Crater to be available.
+17:50:30.529 - Team 10 driving to marker 2(Dist: 28.0km) for 2800 milliseconds
+17:50:30.780 - Team 9 arrived to RouteMarker Jerusalem Old City. Checking for approval..
+17:50:30.780 - Team 9 approved to enter marker Jerusalem Old City
+17:50:30.780 - Team 9 received clue: Route Information
+17:50:30.780 - Team 9 at RM Jerusalem Old City is leaving..
+17:50:30.780 - Team 9 driving to marker 3(Dist: 15.6km) for 1500 milliseconds
+17:50:30.781 - Team 8 at RM Ramon Crater is leaving..
+17:50:30.781 - Team 4 approved to enter marker Ramon Crater
+17:50:30.781 - Team 4 received clue: Detour
+17:50:30.781 - Team 4 performing mental task for 1000 millis.
+17:50:30.781 - Team 8 driving to marker 2(Dist: 28.0km) for 2800 milliseconds
+17:50:30.980 - Team 2 arrived to RouteMarker Dead Sea. Checking for approval..
+17:50:30.986 - Team 2 approved to enter marker Dead Sea
+17:50:30.986 - Team 2 received clue: Roadblock
+17:50:30.986 - Performing a member roadblock task
+17:50:30.987 - Team 2 draws random member: Contestant [ name=Lore Cirino, physicalScore=44, mentalScore=72 ]
+17:50:30.987 - Member Lore Cirino performing combined task for 4200 millis.
+17:50:31.193 - Team 1 arrived to RouteMarker Dead Sea. Checking for approval..
+17:50:31.193 - Team 1 approved to enter marker Dead Sea
+17:50:31.193 - Team 1 received clue: Roadblock
+17:50:31.193 - Performing a member roadblock task
+17:50:31.193 - Team 1 draws random member: Contestant [ name=Hans Emanuel, physicalScore=58, mentalScore=91 ]
+17:50:31.194 - Member Hans Emanuel performing combined task for 2550 millis.
+17:50:31.781 - Team 4 at RM Ramon Crater is leaving..
+17:50:31.781 - Team 4 driving to marker 2(Dist: 28.0km) for 2800 milliseconds
+17:50:31.987 - Team 0 arrived to RouteMarker Dead Sea. Checking for approval..
+17:50:31.987 - Team 0 approved to enter marker Dead Sea
+17:50:31.988 - Team 0 received clue: Roadblock
+17:50:31.988 - Performing a member roadblock task
+17:50:31.988 - Team 0 draws random member: Contestant [ name=Yuli Dechen, physicalScore=73, mentalScore=56 ]
+17:50:31.988 - Member Yuli Dechen performing combined task for 3550 millis.
+17:50:32.280 - Team 9 arrived to RouteMarker Dead Sea. Checking for approval..
+17:50:32.280 - Team 9 is waiting for RouteMarker Dead Sea to be available.
+17:50:32.732 - Team 7 arrived to RouteMarker Jerusalem Old City. Checking for approval..
+17:50:32.732 - Team 7 approved to enter marker Jerusalem Old City
+17:50:32.732 - Team 7 received clue: Route Information
+17:50:32.732 - Team 7 at RM Jerusalem Old City is leaving..
+17:50:32.732 - Team 7 driving to marker 3(Dist: 15.6km) for 1500 milliseconds
+17:50:32.880 - Team 5 arrived to RouteMarker Jerusalem Old City. Checking for approval..
+17:50:32.883 - Team 5 approved to enter marker Jerusalem Old City
+17:50:32.883 - Team 5 received clue: Route Information
+17:50:32.883 - Team 5 at RM Jerusalem Old City is leaving..
+17:50:32.884 - Team 5 driving to marker 3(Dist: 15.6km) for 1500 milliseconds
+17:50:33.329 - Team 10 arrived to RouteMarker Jerusalem Old City. Checking for approval..
+17:50:33.329 - Team 10 approved to enter marker Jerusalem Old City
+17:50:33.329 - Team 10 received clue: Route Information
+17:50:33.329 - Team 10 at RM Jerusalem Old City is leaving..
+17:50:33.330 - Team 10 driving to marker 3(Dist: 15.6km) for 1500 milliseconds
+17:50:33.432 - Team 3 at RM Ramon Crater is leaving..
+17:50:33.432 - Team 3 driving to marker 2(Dist: 28.0km) for 2800 milliseconds
+17:50:33.586 - Team 8 arrived to RouteMarker Jerusalem Old City. Checking for approval..
+17:50:33.586 - Team 8 approved to enter marker Jerusalem Old City
+17:50:33.586 - Team 8 received clue: Route Information
+17:50:33.587 - Team 8 at RM Jerusalem Old City is leaving..
+17:50:33.587 - Team 8 driving to marker 3(Dist: 15.6km) for 1500 milliseconds
+17:50:33.744 - Member Hans Emanuel finished the combined task!
+17:50:33.747 - Team 1 at RM Dead Sea is leaving..
+17:50:33.747 - Team 9 approved to enter marker Dead Sea
+17:50:33.747 - Team 9 received clue: Roadblock
+17:50:33.747 - Performing a member roadblock task
+17:50:33.748 - Team 9 draws random member: Contestant [ name=Pastor Wilcox, physicalScore=96, mentalScore=79 ]
+17:50:33.748 - Member Pastor Wilcox performing combined task for 1250 millis.
+17:50:33.748 - Team 1 driving to marker 4(Dist: 27.8km) for 2700 milliseconds
+17:50:34.232 - Team 7 arrived to RouteMarker Dead Sea. Checking for approval..
+17:50:34.232 - Team 7 is waiting for RouteMarker Dead Sea to be available.
+17:50:34.384 - Team 5 arrived to RouteMarker Dead Sea. Checking for approval..
+17:50:34.387 - Team 5 is waiting for RouteMarker Dead Sea to be available.
+17:50:34.581 - Team 4 arrived to RouteMarker Jerusalem Old City. Checking for approval..
+17:50:34.583 - Team 4 approved to enter marker Jerusalem Old City
+17:50:34.583 - Team 4 received clue: Route Information
+17:50:34.587 - Team 4 at RM Jerusalem Old City is leaving..
+17:50:34.587 - Team 4 driving to marker 3(Dist: 15.6km) for 1500 milliseconds
+17:50:34.833 - Team 10 arrived to RouteMarker Dead Sea. Checking for approval..
+17:50:34.833 - Team 10 is waiting for RouteMarker Dead Sea to be available.
+17:50:34.998 - Member Pastor Wilcox finished the combined task!
+17:50:35 - Team 9 at RM Dead Sea is leaving..
+17:50:35 - Team 10 approved to enter marker Dead Sea
+17:50:35 - Team 10 received clue: Roadblock
+17:50:35 - Performing a member roadblock task
+17:50:35 - Team 10 draws random member: Contestant [ name=Theophilus Profeta, physicalScore=93, mentalScore=81 ]
+17:50:35 - Member Theophilus Profeta performing combined task for 1300 millis.
+17:50:35.001 - Team 5 is waiting for RouteMarker Dead Sea to be available.
+17:50:35.001 - Team 7 is waiting for RouteMarker Dead Sea to be available.
+17:50:35.001 - Team 9 driving to marker 4(Dist: 27.8km) for 2700 milliseconds
+17:50:35.087 - Team 8 arrived to RouteMarker Dead Sea. Checking for approval..
+17:50:35.087 - Team 8 is waiting for RouteMarker Dead Sea to be available.
+17:50:35.187 - Member Lore Cirino finished the combined task!
+17:50:35.187 - Team 2 at RM Dead Sea is leaving..
+17:50:35.187 - Team 8 approved to enter marker Dead Sea
+17:50:35.187 - Team 8 received clue: Roadblock
+17:50:35.187 - Performing a member roadblock task
+17:50:35.187 - Team 7 approved to enter marker Dead Sea
+17:50:35.187 - Team 7 received clue: Roadblock
+17:50:35.187 - Team 8 draws random member: Contestant [ name=Khaled Baumhauer, physicalScore=97, mentalScore=55 ]
+17:50:35.187 - Member Khaled Baumhauer performing combined task for 2400 millis.
+17:50:35.187 - Team 2 driving to marker 4(Dist: 27.8km) for 2700 milliseconds
+17:50:35.187 - Performing a member roadblock task
+17:50:35.188 - Team 7 draws random member: Contestant [ name=Christen Shepherd, physicalScore=64, mentalScore=76 ]
+17:50:35.188 - Member Christen Shepherd performing combined task for 3000 millis.
+17:50:35.188 - Team 5 is waiting for RouteMarker Dead Sea to be available.
+17:50:35.538 - Member Yuli Dechen finished the combined task!
+17:50:35.538 - Team 0 at RM Dead Sea is leaving..
+17:50:35.538 - Team 5 is waiting for RouteMarker Dead Sea to be available.
+17:50:35.538 - Team 0 driving to marker 4(Dist: 27.8km) for 2700 milliseconds
+17:50:36.087 - Team 4 arrived to RouteMarker Dead Sea. Checking for approval..
+17:50:36.087 - Team 4 is waiting for RouteMarker Dead Sea to be available.
+17:50:36.129 - Team 6 at RM Ramon Crater is leaving..
+17:50:36.129 - Team 6 driving to marker 2(Dist: 28.0km) for 2800 milliseconds
+17:50:36.232 - Team 3 arrived to RouteMarker Jerusalem Old City. Checking for approval..
+17:50:36.232 - Team 3 approved to enter marker Jerusalem Old City
+17:50:36.232 - Team 3 received clue: Route Information
+17:50:36.233 - Team 3 at RM Jerusalem Old City is leaving..
+17:50:36.233 - Team 3 driving to marker 3(Dist: 15.6km) for 1500 milliseconds
+17:50:36.300 - Member Theophilus Profeta finished the combined task!
+17:50:36.300 - Team 10 at RM Dead Sea is leaving..
+17:50:36.300 - Team 4 approved to enter marker Dead Sea
+17:50:36.300 - Team 4 received clue: Roadblock
+17:50:36.300 - Performing a member roadblock task
+17:50:36.301 - Team 4 draws random member: Contestant [ name=Nicole McKenzie, physicalScore=45, mentalScore=89 ]
+17:50:36.301 - Member Nicole McKenzie performing combined task for 3300 millis.
+17:50:36.301 - Team 5 is waiting for RouteMarker Dead Sea to be available.
+17:50:36.302 - Team 10 driving to marker 4(Dist: 27.8km) for 2700 milliseconds
+17:50:36.450 - Team 1 arrived to RouteMarker Acre Market. Checking for approval..
+17:50:36.450 - Team 1 approved to enter marker Acre Market
+17:50:36.450 - Team 1 received clue: Route Information
+17:50:36.450 - Team 1 at RM Acre Market is leaving..
+17:50:36.450 - Team 1 driving to marker 5(Dist: 14.2km) for 1400 milliseconds
+17:50:37.588 - Member Khaled Baumhauer finished the combined task!
+17:50:37.588 - Team 8 at RM Dead Sea is leaving..
+17:50:37.588 - Team 8 driving to marker 4(Dist: 27.8km) for 2700 milliseconds
+17:50:37.588 - Team 5 approved to enter marker Dead Sea
+17:50:37.588 - Team 5 received clue: Roadblock
+17:50:37.588 - Performing a member roadblock task
+17:50:37.588 - Team 5 draws random member: Contestant [ name=Jonas Herbert, physicalScore=67, mentalScore=75 ]
+17:50:37.588 - Member Jonas Herbert performing combined task for 2900 millis.
+17:50:37.702 - Team 9 arrived to RouteMarker Acre Market. Checking for approval..
+17:50:37.702 - Team 9 approved to enter marker Acre Market
+17:50:37.702 - Team 9 received clue: Route Information
+17:50:37.702 - Team 9 at RM Acre Market is leaving..
+17:50:37.703 - Team 9 driving to marker 5(Dist: 14.2km) for 1400 milliseconds
+17:50:37.734 - Team 3 arrived to RouteMarker Dead Sea. Checking for approval..
+17:50:37.734 - Team 3 is waiting for RouteMarker Dead Sea to be available.
+17:50:37.853 - Team 1 arrived to RouteMarker Kinneret. Checking for approval..
+17:50:37.853 - Team 1 approved to enter marker Kinneret
+17:50:37.853 - Team 1 received clue: Route Information
+17:50:37.853 - Team 1 at RM Kinneret is leaving..
+17:50:37.854 - Team 1 driving to marker 6(Dist: 12.5km) for 1200 milliseconds
+17:50:37.888 - Team 2 arrived to RouteMarker Acre Market. Checking for approval..
+17:50:37.888 - Team 2 approved to enter marker Acre Market
+17:50:37.888 - Team 2 received clue: Route Information
+17:50:37.888 - Team 2 at RM Acre Market is leaving..
+17:50:37.888 - Team 2 driving to marker 5(Dist: 14.2km) for 1400 milliseconds
+17:50:38.189 - Member Christen Shepherd finished the combined task!
+17:50:38.189 - Team 7 at RM Dead Sea is leaving..
+17:50:38.189 - Team 3 approved to enter marker Dead Sea
+17:50:38.189 - Team 3 received clue: Roadblock
+17:50:38.189 - Performing a member roadblock task
+17:50:38.190 - Team 3 draws random member: Contestant [ name=Ema Major, physicalScore=56, mentalScore=43 ]
+17:50:38.196 - Member Ema Major performing combined task for 5050 millis.
+17:50:38.196 - Team 7 driving to marker 4(Dist: 27.8km) for 2700 milliseconds
+17:50:38.239 - Team 0 arrived to RouteMarker Acre Market. Checking for approval..
+17:50:38.239 - Team 0 approved to enter marker Acre Market
+17:50:38.239 - Team 0 received clue: Route Information
+17:50:38.239 - Team 0 at RM Acre Market is leaving..
+17:50:38.239 - Team 0 driving to marker 5(Dist: 14.2km) for 1400 milliseconds
+17:50:38.930 - Team 6 arrived to RouteMarker Jerusalem Old City. Checking for approval..
+17:50:38.930 - Team 6 approved to enter marker Jerusalem Old City
+17:50:38.930 - Team 6 received clue: Route Information
+17:50:38.930 - Team 6 at RM Jerusalem Old City is leaving..
+17:50:38.930 - Team 6 driving to marker 3(Dist: 15.6km) for 1500 milliseconds
+17:50:39.003 - Team 10 arrived to RouteMarker Acre Market. Checking for approval..
+17:50:39.003 - Team 10 approved to enter marker Acre Market
+17:50:39.003 - Team 10 received clue: Route Information
+17:50:39.003 - Team 10 at RM Acre Market is leaving..
+17:50:39.003 - Team 10 driving to marker 5(Dist: 14.2km) for 1400 milliseconds
+17:50:39.054 - Team 1 arrived to RouteMarker Bahai Garden. Checking for approval..
+17:50:39.054 - Team 1 approved to enter marker Bahai Garden
+17:50:39.054 - Team 1 received clue: Detour
+17:50:39.054 - Team 1 performing mental task for 2200 millis.
+17:50:39.103 - Team 9 arrived to RouteMarker Kinneret. Checking for approval..
+17:50:39.103 - Team 9 approved to enter marker Kinneret
+17:50:39.103 - Team 9 received clue: Route Information
+17:50:39.103 - Team 9 at RM Kinneret is leaving..
+17:50:39.103 - Team 9 driving to marker 6(Dist: 12.5km) for 1200 milliseconds
+17:50:39.288 - Team 2 arrived to RouteMarker Kinneret. Checking for approval..
+17:50:39.288 - Team 2 approved to enter marker Kinneret
+17:50:39.288 - Team 2 received clue: Route Information
+17:50:39.288 - Team 2 at RM Kinneret is leaving..
+17:50:39.288 - Team 2 driving to marker 6(Dist: 12.5km) for 1200 milliseconds
+17:50:39.602 - Member Nicole McKenzie finished the combined task!
+17:50:39.602 - Team 4 at RM Dead Sea is leaving..
+17:50:39.602 - Team 4 driving to marker 4(Dist: 27.8km) for 2700 milliseconds
+17:50:39.639 - Team 0 arrived to RouteMarker Kinneret. Checking for approval..
+17:50:39.639 - Team 0 approved to enter marker Kinneret
+17:50:39.639 - Team 0 received clue: Route Information
+17:50:39.639 - Team 0 at RM Kinneret is leaving..
+17:50:39.639 - Team 0 driving to marker 6(Dist: 12.5km) for 1200 milliseconds
+17:50:40.288 - Team 8 arrived to RouteMarker Acre Market. Checking for approval..
+17:50:40.288 - Team 8 approved to enter marker Acre Market
+17:50:40.288 - Team 8 received clue: Route Information
+17:50:40.288 - Team 8 at RM Acre Market is leaving..
+17:50:40.288 - Team 8 driving to marker 5(Dist: 14.2km) for 1400 milliseconds
+17:50:40.303 - Team 9 arrived to RouteMarker Bahai Garden. Checking for approval..
+17:50:40.303 - Team 9 approved to enter marker Bahai Garden
+17:50:40.303 - Team 9 received clue: Detour
+17:50:40.303 - Team 9 performing mental task for 1300 millis.
+17:50:40.403 - Team 10 arrived to RouteMarker Kinneret. Checking for approval..
+17:50:40.403 - Team 10 approved to enter marker Kinneret
+17:50:40.403 - Team 10 received clue: Route Information
+17:50:40.403 - Team 10 at RM Kinneret is leaving..
+17:50:40.403 - Team 10 driving to marker 6(Dist: 12.5km) for 1200 milliseconds
+17:50:40.430 - Team 6 arrived to RouteMarker Dead Sea. Checking for approval..
+17:50:40.430 - Team 6 approved to enter marker Dead Sea
+17:50:40.430 - Team 6 received clue: Roadblock
+17:50:40.430 - Performing a member roadblock task
+17:50:40.433 - Team 6 draws random member: Contestant [ name=Sigifrid Cowden, physicalScore=23, mentalScore=26 ]
+17:50:40.434 - Member Sigifrid Cowden performing combined task for 7550 millis.
+17:50:40.488 - Team 2 arrived to RouteMarker Bahai Garden. Checking for approval..
+17:50:40.488 - Team 2 approved to enter marker Bahai Garden
+17:50:40.488 - Team 2 received clue: Detour
+17:50:40.488 - Team 2 performing mental task for 2000 millis.
+17:50:40.488 - Member Jonas Herbert finished the combined task!
+17:50:40.488 - Team 5 at RM Dead Sea is leaving..
+17:50:40.488 - Team 5 driving to marker 4(Dist: 27.8km) for 2700 milliseconds
+17:50:40.839 - Team 0 arrived to RouteMarker Bahai Garden. Checking for approval..
+17:50:40.839 - Team 0 is waiting for RouteMarker Bahai Garden to be available.
+17:50:40.896 - Team 7 arrived to RouteMarker Acre Market. Checking for approval..
+17:50:40.896 - Team 7 approved to enter marker Acre Market
+17:50:40.896 - Team 7 received clue: Route Information
+17:50:40.896 - Team 7 at RM Acre Market is leaving..
+17:50:40.896 - Team 7 driving to marker 5(Dist: 14.2km) for 1400 milliseconds
+17:50:41.254 - Team 1 at RM Bahai Garden is leaving..
+17:50:41.254 - Team 0 approved to enter marker Bahai Garden
+17:50:41.254 - Team 0 received clue: Detour
+17:50:41.254 - Team 0 performing physical task for 3000 millis
+17:50:41.254 - Team 1 driving to marker 7(Dist: 25.1km) for 2500 milliseconds
+17:50:41.603 - Team 9 at RM Bahai Garden is leaving..
+17:50:41.603 - Team 9 driving to marker 7(Dist: 25.1km) for 2500 milliseconds
+17:50:41.604 - Team 10 arrived to RouteMarker Bahai Garden. Checking for approval..
+17:50:41.604 - Team 10 approved to enter marker Bahai Garden
+17:50:41.604 - Team 10 received clue: Detour
+17:50:41.604 - Team 10 performing physical task for 2550 millis
+17:50:41.688 - Team 8 arrived to RouteMarker Kinneret. Checking for approval..
+17:50:41.688 - Team 8 approved to enter marker Kinneret
+17:50:41.688 - Team 8 received clue: Route Information
+17:50:41.688 - Team 8 at RM Kinneret is leaving..
+17:50:41.688 - Team 8 driving to marker 6(Dist: 12.5km) for 1200 milliseconds
+17:50:42.296 - Team 7 arrived to RouteMarker Kinneret. Checking for approval..
+17:50:42.296 - Team 7 approved to enter marker Kinneret
+17:50:42.296 - Team 7 received clue: Route Information
+17:50:42.296 - Team 7 at RM Kinneret is leaving..
+17:50:42.297 - Team 7 driving to marker 6(Dist: 12.5km) for 1200 milliseconds
+17:50:42.302 - Team 4 arrived to RouteMarker Acre Market. Checking for approval..
+17:50:42.302 - Team 4 approved to enter marker Acre Market
+17:50:42.302 - Team 4 received clue: Route Information
+17:50:42.302 - Team 4 at RM Acre Market is leaving..
+17:50:42.304 - Team 4 driving to marker 5(Dist: 14.2km) for 1400 milliseconds
+17:50:42.488 - Team 2 at RM Bahai Garden is leaving..
+17:50:42.493 - Team 2 driving to marker 7(Dist: 25.1km) for 2500 milliseconds
+17:50:42.888 - Team 8 arrived to RouteMarker Bahai Garden. Checking for approval..
+17:50:42.888 - Team 8 approved to enter marker Bahai Garden
+17:50:42.888 - Team 8 received clue: Detour
+17:50:42.888 - Team 8 performing physical task for 850 millis
+17:50:43.188 - Team 5 arrived to RouteMarker Acre Market. Checking for approval..
+17:50:43.188 - Team 5 approved to enter marker Acre Market
+17:50:43.188 - Team 5 received clue: Route Information
+17:50:43.188 - Team 5 at RM Acre Market is leaving..
+17:50:43.188 - Team 5 driving to marker 5(Dist: 14.2km) for 1400 milliseconds
+17:50:43.246 - Member Ema Major finished the combined task!
+17:50:43.246 - Team 3 at RM Dead Sea is leaving..
+17:50:43.246 - Team 3 driving to marker 4(Dist: 27.8km) for 2700 milliseconds
+17:50:43.497 - Team 7 arrived to RouteMarker Bahai Garden. Checking for approval..
+17:50:43.497 - Team 7 is waiting for RouteMarker Bahai Garden to be available.
+17:50:43.704 - Team 4 arrived to RouteMarker Kinneret. Checking for approval..
+17:50:43.704 - Team 4 approved to enter marker Kinneret
+17:50:43.704 - Team 4 received clue: Route Information
+17:50:43.704 - Team 4 at RM Kinneret is leaving..
+17:50:43.704 - Team 4 driving to marker 6(Dist: 12.5km) for 1200 milliseconds
+17:50:43.738 - Team 8 at RM Bahai Garden is leaving..
+17:50:43.738 - Team 7 approved to enter marker Bahai Garden
+17:50:43.738 - Team 7 received clue: Detour
+17:50:43.738 - Team 7 performing mental task for 3250 millis.
+17:50:43.738 - Team 8 driving to marker 7(Dist: 25.1km) for 2500 milliseconds
+17:50:43.754 - Team 1 arrived to RouteMarker Tel Aviv Azrieli Center. Checking for approval..
+17:50:43.754 - Team 1 approved to enter marker Tel Aviv Azrieli Center
+17:50:43.754 - Team 1 received clue: Route Information
+17:50:43.754 - Team 1 at RM Tel Aviv Azrieli Center is leaving..
+17:50:44.103 - Team 9 arrived to RouteMarker Tel Aviv Azrieli Center. Checking for approval..
+17:50:44.103 - Team 9 approved to enter marker Tel Aviv Azrieli Center
+17:50:44.103 - Team 9 received clue: Route Information
+17:50:44.103 - Team 9 at RM Tel Aviv Azrieli Center is leaving..
+17:50:44.154 - Team 10 at RM Bahai Garden is leaving..
+17:50:44.154 - Team 10 driving to marker 7(Dist: 25.1km) for 2500 milliseconds
+17:50:44.254 - Team 0 at RM Bahai Garden is leaving..
+17:50:44.254 - Team 0 driving to marker 7(Dist: 25.1km) for 2500 milliseconds
+17:50:44.588 - Team 5 arrived to RouteMarker Kinneret. Checking for approval..
+17:50:44.588 - Team 5 approved to enter marker Kinneret
+17:50:44.588 - Team 5 received clue: Route Information
+17:50:44.588 - Team 5 at RM Kinneret is leaving..
+17:50:44.588 - Team 5 driving to marker 6(Dist: 12.5km) for 1200 milliseconds
+17:50:44.904 - Team 4 arrived to RouteMarker Bahai Garden. Checking for approval..
+17:50:44.904 - Team 4 approved to enter marker Bahai Garden
+17:50:44.904 - Team 4 received clue: Detour
+17:50:44.904 - Team 4 performing mental task for 1000 millis.
+17:50:44.993 - Team 2 arrived to RouteMarker Tel Aviv Azrieli Center. Checking for approval..
+17:50:44.993 - Team 2 approved to enter marker Tel Aviv Azrieli Center
+17:50:44.993 - Team 2 received clue: Route Information
+17:50:44.993 - Team 2 at RM Tel Aviv Azrieli Center is leaving..
+17:50:45.789 - Team 5 arrived to RouteMarker Bahai Garden. Checking for approval..
+17:50:45.789 - Team 5 approved to enter marker Bahai Garden
+17:50:45.789 - Team 5 received clue: Detour
+17:50:45.789 - Team 5 performing physical task for 2400 millis
+17:50:45.904 - Team 4 at RM Bahai Garden is leaving..
+17:50:45.904 - Team 4 driving to marker 7(Dist: 25.1km) for 2500 milliseconds
+17:50:45.946 - Team 3 arrived to RouteMarker Acre Market. Checking for approval..
+17:50:45.946 - Team 3 approved to enter marker Acre Market
+17:50:45.946 - Team 3 received clue: Route Information
+17:50:45.946 - Team 3 at RM Acre Market is leaving..
+17:50:45.946 - Team 3 driving to marker 5(Dist: 14.2km) for 1400 milliseconds
+17:50:46.242 - Team 8 arrived to RouteMarker Tel Aviv Azrieli Center. Checking for approval..
+17:50:46.242 - Team 8 approved to enter marker Tel Aviv Azrieli Center
+17:50:46.242 - Team 8 received clue: Route Information
+17:50:46.242 - Team 8 at RM Tel Aviv Azrieli Center is leaving..
+17:50:46.654 - Team 10 arrived to RouteMarker Tel Aviv Azrieli Center. Checking for approval..
+17:50:46.654 - Team 10 approved to enter marker Tel Aviv Azrieli Center
+17:50:46.654 - Team 10 received clue: Route Information
+17:50:46.654 - Team 10 at RM Tel Aviv Azrieli Center is leaving..
+17:50:46.757 - Team 0 arrived to RouteMarker Tel Aviv Azrieli Center. Checking for approval..
+17:50:46.757 - Team 0 approved to enter marker Tel Aviv Azrieli Center
+17:50:46.757 - Team 0 received clue: Route Information
+17:50:46.757 - Team 0 at RM Tel Aviv Azrieli Center is leaving..
+17:50:46.757 - Team 0 has finished the race!
+17:50:46.757 - Team 1 has finished the race!
+17:50:46.757 - Team 2 has finished the race!
+17:50:46.988 - Team 7 at RM Bahai Garden is leaving..
+17:50:46.988 - Team 7 driving to marker 7(Dist: 25.1km) for 2500 milliseconds
+17:50:47.346 - Team 3 arrived to RouteMarker Kinneret. Checking for approval..
+17:50:47.346 - Team 3 approved to enter marker Kinneret
+17:50:47.346 - Team 3 received clue: Route Information
+17:50:47.346 - Team 3 at RM Kinneret is leaving..
+17:50:47.346 - Team 3 driving to marker 6(Dist: 12.5km) for 1200 milliseconds
+17:50:47.992 - Member Sigifrid Cowden finished the combined task!
+17:50:47.992 - Team 6 at RM Dead Sea is leaving..
+17:50:47.992 - Team 6 driving to marker 4(Dist: 27.8km) for 2700 milliseconds
+17:50:48.189 - Team 5 at RM Bahai Garden is leaving..
+17:50:48.192 - Team 5 driving to marker 7(Dist: 25.1km) for 2500 milliseconds
+17:50:48.404 - Team 4 arrived to RouteMarker Tel Aviv Azrieli Center. Checking for approval..
+17:50:48.404 - Team 4 approved to enter marker Tel Aviv Azrieli Center
+17:50:48.404 - Team 4 received clue: Route Information
+17:50:48.404 - Team 4 at RM Tel Aviv Azrieli Center is leaving..
+17:50:48.546 - Team 3 arrived to RouteMarker Bahai Garden. Checking for approval..
+17:50:48.546 - Team 3 approved to enter marker Bahai Garden
+17:50:48.546 - Team 3 received clue: Detour
+17:50:48.546 - Team 3 performing physical task for 3350 millis
+17:50:49.488 - Team 7 arrived to RouteMarker Tel Aviv Azrieli Center. Checking for approval..
+17:50:49.488 - Team 7 approved to enter marker Tel Aviv Azrieli Center
+17:50:49.488 - Team 7 received clue: Route Information
+17:50:49.488 - Team 7 at RM Tel Aviv Azrieli Center is leaving..
+17:50:50.692 - Team 5 arrived to RouteMarker Tel Aviv Azrieli Center. Checking for approval..
+17:50:50.692 - Team 5 approved to enter marker Tel Aviv Azrieli Center
+17:50:50.692 - Team 5 received clue: Route Information
+17:50:50.692 - Team 5 at RM Tel Aviv Azrieli Center is leaving..
+17:50:50.692 - Team 6 arrived to RouteMarker Acre Market. Checking for approval..
+17:50:50.692 - Team 6 approved to enter marker Acre Market
+17:50:50.692 - Team 6 received clue: Route Information
+17:50:50.692 - Team 6 at RM Acre Market is leaving..
+17:50:50.692 - Team 6 driving to marker 5(Dist: 14.2km) for 1400 milliseconds
+17:50:51.896 - Team 3 at RM Bahai Garden is leaving..
+17:50:51.896 - Team 3 driving to marker 7(Dist: 25.1km) for 2500 milliseconds
+17:50:52.092 - Team 6 arrived to RouteMarker Kinneret. Checking for approval..
+17:50:52.092 - Team 6 approved to enter marker Kinneret
+17:50:52.092 - Team 6 received clue: Route Information
+17:50:52.092 - Team 6 at RM Kinneret is leaving..
+17:50:52.092 - Team 6 driving to marker 6(Dist: 12.5km) for 1200 milliseconds
+17:50:53.292 - Team 6 arrived to RouteMarker Bahai Garden. Checking for approval..
+17:50:53.292 - Team 6 approved to enter marker Bahai Garden
+17:50:53.292 - Team 6 received clue: Detour
+17:50:53.292 - Team 6 performing physical task for 5600 millis
+17:50:54.405 - Team 3 arrived to RouteMarker Tel Aviv Azrieli Center. Checking for approval..
+17:50:54.405 - Team 3 approved to enter marker Tel Aviv Azrieli Center
+17:50:54.405 - Team 3 received clue: Route Information
+17:50:54.405 - Team 3 at RM Tel Aviv Azrieli Center is leaving..
+17:50:54.405 - Team 3 has finished the race!
+17:50:54.405 - Team 4 has finished the race!
+17:50:54.405 - Team 5 has finished the race!
+17:50:58.893 - Team 6 at RM Bahai Garden is leaving..
+17:50:58.893 - Team 6 driving to marker 7(Dist: 25.1km) for 2500 milliseconds
+17:51:01.393 - Team 6 arrived to RouteMarker Tel Aviv Azrieli Center. Checking for approval..
+17:51:01.394 - Team 6 approved to enter marker Tel Aviv Azrieli Center
+17:51:01.394 - Team 6 received clue: Route Information
+17:51:01.394 - Team 6 at RM Tel Aviv Azrieli Center is leaving..
+17:51:01.394 - Team 6 has finished the race!
+17:51:01.394 - Team 7 has finished the race!
+17:51:01.394 - Team 8 has finished the race!
+17:51:01.394 - Team 9 has finished the race!
+17:51:01.394 - Team 10 has finished the race!
+17:51:01.394 - ===================================
+17:51:01.394 - Race is finished. Printing standings.
+17:51:01.394 - ===================================
+17:51:01.418 - 1. Team [ id=1, avgPhysicalScore=63.50, avgMentalScore=78.00, 
+	member1=Contestant [ name=Hans Emanuel, physicalScore=58, mentalScore=91 ], 
+	member2=Contestant [ name=Elton Victor, physicalScore=69, mentalScore=65 ]
+Total Time: 225862. Team [ id=9, avgPhysicalScore=76.00, avgMentalScore=87.00, 
+	member1=Contestant [ name=Pastor Wilcox, physicalScore=96, mentalScore=79 ], 
+	member2=Contestant [ name=Ohad Piatek, physicalScore=56, mentalScore=95 ]
+Total Time: 229333. Team [ id=2, avgPhysicalScore=43.50, avgMentalScore=80.00, 
+	member1=Contestant [ name=Jana Cleve, physicalScore=43, mentalScore=88 ], 
+	member2=Contestant [ name=Lore Cirino, physicalScore=44, mentalScore=72 ]
+Total Time: 238244. Team [ id=8, avgPhysicalScore=91.50, avgMentalScore=48.50, 
+	member1=Contestant [ name=Lucie Arts, physicalScore=86, mentalScore=42 ], 
+	member2=Contestant [ name=Khaled Baumhauer, physicalScore=97, mentalScore=55 ]
+Total Time: 250735. Team [ id=10, avgPhysicalScore=74.50, avgMentalScore=53.00, 
+	member1=Contestant [ name=Stella Blaha, physicalScore=56, mentalScore=25 ], 
+	member2=Contestant [ name=Theophilus Profeta, physicalScore=93, mentalScore=81 ]
+Total Time: 254856. Team [ id=0, avgPhysicalScore=70.00, avgMentalScore=67.00, 
+	member1=Contestant [ name=Yuli Dechen, physicalScore=73, mentalScore=56 ], 
+	member2=Contestant [ name=Rahmi Girish, physicalScore=67, mentalScore=78 ]
+Total Time: 255887. Team [ id=4, avgPhysicalScore=40.50, avgMentalScore=91.50, 
+	member1=Contestant [ name=Helena Sala, physicalScore=36, mentalScore=94 ], 
+	member2=Contestant [ name=Nicole McKenzie, physicalScore=45, mentalScore=89 ]
+Total Time: 272358. Team [ id=7, avgPhysicalScore=59.00, avgMentalScore=67.50, 
+	member1=Contestant [ name=Christen Shepherd, physicalScore=64, mentalScore=76 ], 
+	member2=Contestant [ name=Faustino Garrard, physicalScore=54, mentalScore=59 ]
+Total Time: 283199. Team [ id=5, avgPhysicalScore=76.00, avgMentalScore=73.00, 
+	member1=Contestant [ name=Jonas Herbert, physicalScore=67, mentalScore=75 ], 
+	member2=Contestant [ name=Andreas Putnam, physicalScore=85, mentalScore=71 ]
+Total Time: 2952310. Team [ id=3, avgPhysicalScore=66.50, avgMentalScore=50.50, 
+	member1=Contestant [ name=Ema Major, physicalScore=56, mentalScore=43 ], 
+	member2=Contestant [ name=Filipa Xanthos, physicalScore=77, mentalScore=58 ]
+Total Time: 3323711. Team [ id=6, avgPhysicalScore=44.00, avgMentalScore=25.00, 
+	member1=Contestant [ name=Ulf Hurst, physicalScore=65, mentalScore=24 ], 
+	member2=Contestant [ name=Sigifrid Cowden, physicalScore=23, mentalScore=26 ]
+Total Time: 40225

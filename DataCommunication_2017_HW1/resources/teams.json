@@ -5,14 +5,14 @@
 			{
 				"firstName" : "Yuli",
 				"lastName" : "Dechen",
-				"physicalScore" : 73,
-				"mentalScore" : 56
+				"physicalScore" : 100,
+				"mentalScore" : 100
 			},
 			{
 				"firstName" : "Rahmi",
 				"lastName" : "Girish",
-				"physicalScore" : 67,
-				"mentalScore" : 78
+				"physicalScore" : 100,
+				"mentalScore" : 100
 			}
 		]
 	},
@@ -22,14 +22,14 @@
 			{
 				"firstName" : "Hans",
 				"lastName" : "Emanuel",
-				"physicalScore" : 58,
-				"mentalScore" : 91
+				"physicalScore" : 0,
+				"mentalScore" : 0
 			},
 			{
 				"firstName" : "Elton",
 				"lastName" : "Victor",
-				"physicalScore" : 69,
-				"mentalScore" : 65
+				"physicalScore" : 0,
+				"mentalScore" : 0
 			}
 		]
 	},

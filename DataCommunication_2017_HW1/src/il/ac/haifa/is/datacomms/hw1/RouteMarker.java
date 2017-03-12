@@ -174,9 +174,9 @@ public final class RouteMarker {
 	 *         first in list. last to leave is last in list.
 	 */
 	public String getStandings() {
-		String out = "";
+		String out = ""+System.getProperty("line.separator");
 		for (int i = 0; i < visitedTeams.size(); i++)
-			out += (i + 1) + ". " + visitedTeams.get(i) + "Total Time: "+visitedTeams.get(i).getRaceTime()+" seconds.\n";
+			out += (i + 1) + ". " + visitedTeams.get(i) + "Total Time: "+visitedTeams.get(i).getRaceTime()+" seconds."+System.getProperty("line.separator")+System.getProperty("line.separator");
 		return out;
 	}
 

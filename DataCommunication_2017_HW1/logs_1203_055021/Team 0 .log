@@ -1,0 +1,46 @@
+17:50:21.172 - Team 0 joined the race!
+17:50:21.173 - Team 0 driving to marker 0(Dist: 2.6km) for 200 milliseconds
+17:50:21.373 - Team 0 arrived to RouteMarker Hula Valley. Checking for approval..
+17:50:21.373 - Team 0 approved to enter marker Hula Valley
+17:50:21.373 - Team 0 received clue: Route Information
+17:50:21.374 - Team 0 at RM Hula Valley is leaving..
+17:50:21.374 - Team 0 driving to marker 1(Dist: 33.0km) for 3300 milliseconds
+17:50:24.674 - Team 0 arrived to RouteMarker Ramon Crater. Checking for approval..
+17:50:24.674 - Team 0 approved to enter marker Ramon Crater
+17:50:24.678 - Team 0 received clue: Detour
+17:50:24.678 - Team 0 performing physical task for 3000 millis
+17:50:27.678 - Team 0 at RM Ramon Crater is leaving..
+17:50:27.687 - Team 0 driving to marker 2(Dist: 28.0km) for 2800 milliseconds
+17:50:30.487 - Team 0 arrived to RouteMarker Jerusalem Old City. Checking for approval..
+17:50:30.487 - Team 0 approved to enter marker Jerusalem Old City
+17:50:30.487 - Team 0 received clue: Route Information
+17:50:30.487 - Team 0 at RM Jerusalem Old City is leaving..
+17:50:30.487 - Team 0 driving to marker 3(Dist: 15.6km) for 1500 milliseconds
+17:50:31.987 - Team 0 arrived to RouteMarker Dead Sea. Checking for approval..
+17:50:31.987 - Team 0 approved to enter marker Dead Sea
+17:50:31.988 - Team 0 received clue: Roadblock
+17:50:31.988 - Team 0 draws random member: Contestant [ name=Yuli Dechen, physicalScore=73, mentalScore=56 ]
+17:50:35.538 - Team 0 at RM Dead Sea is leaving..
+17:50:35.538 - Team 0 driving to marker 4(Dist: 27.8km) for 2700 milliseconds
+17:50:38.239 - Team 0 arrived to RouteMarker Acre Market. Checking for approval..
+17:50:38.239 - Team 0 approved to enter marker Acre Market
+17:50:38.239 - Team 0 received clue: Route Information
+17:50:38.239 - Team 0 at RM Acre Market is leaving..
+17:50:38.239 - Team 0 driving to marker 5(Dist: 14.2km) for 1400 milliseconds
+17:50:39.639 - Team 0 arrived to RouteMarker Kinneret. Checking for approval..
+17:50:39.639 - Team 0 approved to enter marker Kinneret
+17:50:39.639 - Team 0 received clue: Route Information
+17:50:39.639 - Team 0 at RM Kinneret is leaving..
+17:50:39.639 - Team 0 driving to marker 6(Dist: 12.5km) for 1200 milliseconds
+17:50:40.839 - Team 0 arrived to RouteMarker Bahai Garden. Checking for approval..
+17:50:40.839 - Team 0 is waiting for RouteMarker Bahai Garden to be available.
+17:50:41.254 - Team 0 approved to enter marker Bahai Garden
+17:50:41.254 - Team 0 received clue: Detour
+17:50:41.254 - Team 0 performing physical task for 3000 millis
+17:50:44.254 - Team 0 at RM Bahai Garden is leaving..
+17:50:44.254 - Team 0 driving to marker 7(Dist: 25.1km) for 2500 milliseconds
+17:50:46.756 - Team 0 arrived to RouteMarker Tel Aviv Azrieli Center. Checking for approval..
+17:50:46.757 - Team 0 approved to enter marker Tel Aviv Azrieli Center
+17:50:46.757 - Team 0 received clue: Route Information
+17:50:46.757 - Team 0 at RM Tel Aviv Azrieli Center is leaving..
+17:50:46.757 - Team 0 has finished the race!

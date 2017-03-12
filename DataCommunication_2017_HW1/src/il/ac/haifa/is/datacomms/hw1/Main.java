@@ -16,6 +16,7 @@ public final class Main {
 	static PrintStream prntstrm;
 	static File logFolder;
 	static Map<String, PrintStream> prntToTeam;
+	static Boolean scoreBoard = false;
 
 	private Main() {
 	}
@@ -47,7 +48,16 @@ public final class Main {
 	}
 
 	public static void Log(String str) {
-		if (str.contains("Team ")) {
+		if(scoreBoard || str.contains("==================================")){
+			try {
+				scoreBoard = true;
+				prntstrm = new PrintStream(new File(logFolder + "/" + "Scoreboard.log"));
+			} catch (FileNotFoundException e) {
+				e.printStackTrace();
+			}
+		}
+		else
+		if (str.contains("Team ") && !scoreBoard) {
 			// Is a team log
 			String teamString = str.substring(0, 7);
 			if (!prntToTeam.containsKey(teamString))
@@ -60,6 +70,9 @@ public final class Main {
 			prntToTeam.get(teamString).println(LocalTime.now() + " - " + str);
 
 		}
+		
+		//Take care of scoreboard results
+		
 		prntstrm.println(LocalTime.now() + " - " + str);
 		System.out.println(LocalTime.now() + " - " + str);
 	}
