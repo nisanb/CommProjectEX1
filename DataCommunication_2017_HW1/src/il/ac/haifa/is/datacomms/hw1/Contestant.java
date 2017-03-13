@@ -30,7 +30,7 @@ public final class Contestant {
 	 * performs a combined (both physical & mental) solo task.
 	 */
 	public void performCombinedTask() {
-		long millis = (long) ((100 - getCombinedScore()) * 100);
+		long millis = (long) ((100 - getCombinedScore()) * 100.0);
 		if (millis < 1000)
 			millis = 1000;
 		try {

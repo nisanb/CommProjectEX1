@@ -101,7 +101,7 @@ public final class Team extends Thread {
 	 * @throws InterruptedException
 	 */
 	private void driveTo(RouteMarker marker) {
-		long millis = (long) (marker.getDistance()) * 100;
+		long millis = (long) ((marker.getDistance()) * 100.0);
 		Main.Log("Team " + getName() + " driving to marker " + marker.getId() + "(Dist: " + marker.getDistance()
 				+ "km) for " + millis + " milliseconds");
 		try {
@@ -115,7 +115,7 @@ public final class Team extends Thread {
 	 * performs a physical task.
 	 */
 	private void performPhysicalTask() {
-		long millis = (long) ((100 - getAveragePhysicalScore()) * 100);
+		long millis = (long) ((100 - getAveragePhysicalScore()) * 100.0);
 
 		try {
 			Main.Log("Team " + getName() + " performing physical task for " + millis + " millis");
@@ -129,7 +129,7 @@ public final class Team extends Thread {
 	 * performs a mental task.
 	 */
 	private void performMentalTask() {
-		long millis = (long) ((100 - getAverageMentalScore()) * 100);
+		long millis = (long) ((100 - getAverageMentalScore()) * 100.0);
 		if (millis < 1000)
 			millis = 1000;
 		try {
