@@ -154,14 +154,11 @@ public final class RouteMarker {
 	 */
 	private static RouteMarker getNextRouteMarker(RouteMarker marker) {
 		RouteMarker toReturn = null;
-		Boolean flag = false; // True when marker is found
-		for (RouteMarker tmpRM : AmazingRace.getInstance().getRouteMarkers()) {
-			if (flag) {
-				toReturn = tmpRM;
-				break;
-			}
-			if (tmpRM.equals(marker))
-				flag = true;
+		try {
+			toReturn = AmazingRace.getInstance().getRouteMarkers()
+					.get(AmazingRace.getInstance().getRouteMarkers().indexOf(marker)+1);
+		} catch (IndexOutOfBoundsException e) {
+
 		}
 
 		return toReturn;
@@ -170,13 +167,14 @@ public final class RouteMarker {
 	/**
 	 * @return route marker's standings.
 	 *         <p>
-	 * 		a string of teams in departure time order. first to leave is
+	 *         a string of teams in departure time order. first to leave is
 	 *         first in list. last to leave is last in list.
 	 */
 	public String getStandings() {
-		String out = ""+System.getProperty("line.separator");
+		String out = "" + System.getProperty("line.separator");
 		for (int i = 0; i < visitedTeams.size(); i++)
-			out += (i + 1) + ". " + visitedTeams.get(i) + "Total Time: "+visitedTeams.get(i).getRaceTime()+" seconds."+System.getProperty("line.separator")+System.getProperty("line.separator");
+			out += (i + 1) + ". " + visitedTeams.get(i) + "Total Time: " + visitedTeams.get(i).getRaceTime()
+					+ " seconds." + System.getProperty("line.separator") + System.getProperty("line.separator");
 		return out;
 	}
 

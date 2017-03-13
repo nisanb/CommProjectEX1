@@ -13,6 +13,7 @@ import java.util.Map;
  * Application's main class.
  */
 public final class Main {
+	
 	static PrintStream prntstrm;
 	static File logFolder;
 	static Map<String, PrintStream> prntToTeam;
