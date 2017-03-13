@@ -158,7 +158,7 @@ public final class RouteMarker {
 			toReturn = AmazingRace.getInstance().getRouteMarkers()
 					.get(AmazingRace.getInstance().getRouteMarkers().indexOf(marker)+1);
 		} catch (IndexOutOfBoundsException e) {
-
+			//Catches for pit stop
 		}
 
 		return toReturn;
