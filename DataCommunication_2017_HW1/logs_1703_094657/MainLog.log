@@ -1,0 +1,112 @@
+09:46:58.013 - Starting simulating race
+09:46:58.026 - Importing teams from teams.json
+09:46:58.070 - Importing Route Markers from markers.json
+09:46:58.086 - Team 0 joined the race!
+09:46:58.087 - Team 10 joined the race!
+09:46:58.088 - Team 10 driving to marker 0(Dist: 2.6km) for 200 milliseconds
+09:46:58.087 - Team 0 driving to marker 0(Dist: 2.6km) for 200 milliseconds
+09:46:58.088 - Team 2 joined the race!
+09:46:58.089 - Team 2 driving to marker 0(Dist: 2.6km) for 200 milliseconds
+09:46:58.089 - Team 4 joined the race!
+09:46:58.089 - Team 4 driving to marker 0(Dist: 2.6km) for 200 milliseconds
+09:46:58.090 - Team 6 joined the race!
+09:46:58.090 - Team 6 driving to marker 0(Dist: 2.6km) for 200 milliseconds
+09:46:58.090 - Team 8 joined the race!
+09:46:58.091 - Team 8 driving to marker 0(Dist: 2.6km) for 200 milliseconds
+09:46:58.097 - Team 1 joined the race!
+09:46:58.098 - Team 1 driving to marker 0(Dist: 2.6km) for 200 milliseconds
+09:46:58.098 - Team 3 joined the race!
+09:46:58.098 - Team 3 driving to marker 0(Dist: 2.6km) for 200 milliseconds
+09:46:58.102 - Team 9 joined the race!
+09:46:58.102 - Team 9 driving to marker 0(Dist: 2.6km) for 200 milliseconds
+09:46:58.103 - Team 5 joined the race!
+09:46:58.103 - Team 5 driving to marker 0(Dist: 2.6km) for 200 milliseconds
+09:46:58.103 - Team 7 joined the race!
+09:46:58.103 - Team 7 driving to marker 0(Dist: 2.6km) for 200 milliseconds
+09:46:58.288 - Team 0 arrived to RouteMarker Hula Valley. Checking for approval..
+09:46:58.288 - Team 0 approved to enter marker Hula Valley
+09:46:58.290 - Team 0 received clue: Route Information
+09:46:58.291 - Team 0 at RM Hula Valley is leaving..
+09:46:58.293 - Team 0 driving to marker 1(Dist: 33.0km) for 3300 milliseconds
+09:46:58.294 - Team 10 arrived to RouteMarker Hula Valley. Checking for approval..
+09:46:58.294 - Team 10 approved to enter marker Hula Valley
+09:46:58.294 - Team 10 received clue: Route Information
+09:46:58.294 - Team 10 at RM Hula Valley is leaving..
+09:46:58.295 - Team 10 driving to marker 1(Dist: 33.0km) for 3300 milliseconds
+09:46:58.295 - Team 4 arrived to RouteMarker Hula Valley. Checking for approval..
+09:46:58.295 - Team 4 approved to enter marker Hula Valley
+09:46:58.296 - Team 4 received clue: Route Information
+09:46:58.296 - Team 4 at RM Hula Valley is leaving..
+09:46:58.297 - Team 4 driving to marker 1(Dist: 33.0km) for 3300 milliseconds
+09:46:58.298 - Team 1 arrived to RouteMarker Hula Valley. Checking for approval..
+09:46:58.298 - Team 1 approved to enter marker Hula Valley
+09:46:58.298 - Team 8 arrived to RouteMarker Hula Valley. Checking for approval..
+09:46:58.299 - Team 8 approved to enter marker Hula Valley
+09:46:58.299 - Team 8 received clue: Route Information
+09:46:58.300 - Team 8 at RM Hula Valley is leaving..
+09:46:58.300 - Team 8 driving to marker 1(Dist: 33.0km) for 3300 milliseconds
+09:46:58.298 - Team 6 arrived to RouteMarker Hula Valley. Checking for approval..
+09:46:58.300 - Team 6 approved to enter marker Hula Valley
+09:46:58.301 - Team 6 received clue: Route Information
+09:46:58.301 - Team 6 at RM Hula Valley is leaving..
+09:46:58.301 - Team 6 driving to marker 1(Dist: 33.0km) for 3300 milliseconds
+09:46:58.301 - Team 1 received clue: Route Information
+09:46:58.302 - Team 1 at RM Hula Valley is leaving..
+09:46:58.302 - Team 3 arrived to RouteMarker Hula Valley. Checking for approval..
+09:46:58.302 - Team 1 driving to marker 1(Dist: 33.0km) for 3300 milliseconds
+09:46:58.298 - Team 2 arrived to RouteMarker Hula Valley. Checking for approval..
+09:46:58.302 - Team 3 approved to enter marker Hula Valley
+09:46:58.303 - Team 3 received clue: Route Information
+09:46:58.303 - Team 3 at RM Hula Valley is leaving..
+09:46:58.305 - Team 3 driving to marker 1(Dist: 33.0km) for 3300 milliseconds
+09:46:58.302 - Team 2 approved to enter marker Hula Valley
+09:46:58.305 - Team 2 received clue: Route Information
+09:46:58.305 - Team 2 at RM Hula Valley is leaving..
+09:46:58.306 - Team 2 driving to marker 1(Dist: 33.0km) for 3300 milliseconds
+09:46:58.307 - Team 9 arrived to RouteMarker Hula Valley. Checking for approval..
+09:46:58.307 - Team 9 approved to enter marker Hula Valley
+09:46:58.308 - Team 9 received clue: Route Information
+09:46:58.308 - Team 9 at RM Hula Valley is leaving..
+09:46:58.308 - Team 9 driving to marker 1(Dist: 33.0km) for 3300 milliseconds
+09:46:58.308 - Team 5 arrived to RouteMarker Hula Valley. Checking for approval..
+09:46:58.309 - Team 5 approved to enter marker Hula Valley
+09:46:58.309 - Team 5 received clue: Route Information
+09:46:58.309 - Team 7 arrived to RouteMarker Hula Valley. Checking for approval..
+09:46:58.309 - Team 7 approved to enter marker Hula Valley
+09:46:58.309 - Team 5 at RM Hula Valley is leaving..
+09:46:58.309 - Team 5 driving to marker 1(Dist: 33.0km) for 3300 milliseconds
+09:46:58.310 - Team 7 received clue: Route Information
+09:46:58.311 - Team 7 at RM Hula Valley is leaving..
+09:46:58.311 - Team 7 driving to marker 1(Dist: 33.0km) for 3300 milliseconds
+09:47:01.594 - Team 0 arrived to RouteMarker Ramon Crater. Checking for approval..
+09:47:01.596 - Team 0 approved to enter marker Ramon Crater
+09:47:01.597 - Team 0 received clue: Detour
+09:47:01.598 - Team 0 performing physical task for 0 millis
+09:47:01.598 - Team 10 arrived to RouteMarker Ramon Crater. Checking for approval..
+09:47:01.602 - Team 10 approved to enter marker Ramon Crater
+09:47:01.608 - Team 10 received clue: Detour
+09:47:01.630 - Team 10 performing physical task for 2550 millis
+09:47:01.631 - Team 4 arrived to RouteMarker Ramon Crater. Checking for approval..
+09:47:01.631 - Team 4 approved to enter marker Ramon Crater
+09:47:01.631 - Team 4 received clue: Detour
+09:47:01.631 - Team 4 performing mental task for 1000 millis.
+09:47:01.632 - Team 0 at RM Ramon Crater is leaving..
+09:47:01.632 - Team 0 driving to marker 2(Dist: 28.0km) for 2800 milliseconds
+09:47:01.632 - Team 8 arrived to RouteMarker Ramon Crater. Checking for approval..
+09:47:01.654 - Team 8 approved to enter marker Ramon Crater
+09:47:01.655 - Team 8 received clue: Detour
+09:47:01.655 - Team 8 performing physical task for 850 millis
+09:47:01.655 - Team 6 arrived to RouteMarker Ramon Crater. Checking for approval..
+09:47:01.655 - Team 6 is waiting for RouteMarker Ramon Crater to be available.
+09:47:01.655 - Team 1 arrived to RouteMarker Ramon Crater. Checking for approval..
+09:47:01.655 - Team 1 is waiting for RouteMarker Ramon Crater to be available.
+09:47:01.656 - Team 3 arrived to RouteMarker Ramon Crater. Checking for approval..
+09:47:01.656 - Team 3 is waiting for RouteMarker Ramon Crater to be available.
+09:47:01.656 - Team 2 arrived to RouteMarker Ramon Crater. Checking for approval..
+09:47:01.657 - Team 2 is waiting for RouteMarker Ramon Crater to be available.
+09:47:01.657 - Team 9 arrived to RouteMarker Ramon Crater. Checking for approval..
+09:47:01.657 - Team 9 is waiting for RouteMarker Ramon Crater to be available.
+09:47:01.657 - Team 5 arrived to RouteMarker Ramon Crater. Checking for approval..
+09:47:01.657 - Team 5 is waiting for RouteMarker Ramon Crater to be available.
+09:47:01.658 - Team 7 arrived to RouteMarker Ramon Crater. Checking for approval..
+09:47:01.658 - Team 7 is waiting for RouteMarker Ramon Crater to be available.
