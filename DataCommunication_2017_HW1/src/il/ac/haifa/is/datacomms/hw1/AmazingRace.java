@@ -88,7 +88,7 @@ public final class AmazingRace {
 	}
 
 	/**
-	 * Import json files
+	 * Import json files using concurrent
 	 * @throws InterruptedException 
 	 */
 	private void importFiles() throws InterruptedException {
