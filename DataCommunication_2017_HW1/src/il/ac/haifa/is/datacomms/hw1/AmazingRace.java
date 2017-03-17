@@ -25,10 +25,10 @@ public final class AmazingRace {
 	// -------------------------------------------------------------------
 	private volatile static AmazingRace initiatedRace = null;
 	/** teams participating in the race. */
-	private volatile List<Team> teams = new ArrayList<Team>();
+	private volatile List<Team> teams;
 
 	/** race's route markers. */
-	private volatile List<RouteMarker> markers = new ArrayList<RouteMarker>();
+	private volatile List<RouteMarker> markers;
 
 	// -------------------------------------------------------------------
 	// -------------------------constructors------------------------------
@@ -44,6 +44,15 @@ public final class AmazingRace {
 			initiatedRace = new AmazingRace();
 
 		return initiatedRace;
+	}
+	
+	/**
+	 * Private singelton constructor
+	 */
+	private AmazingRace(){
+		Main.Log("Initiated AmazingRace Instance");
+		teams =  new ArrayList<Team>();
+		markers = new ArrayList<RouteMarker>();
 	}
 
 	// -------------------------------------------------------------------
