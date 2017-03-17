@@ -58,8 +58,7 @@ public final class AmazingRace {
 	 */
 	public void simulate() throws InterruptedException {
 		Main.Log("Starting simulating race");
-		initTeams();
-		initRouteMarkers();
+		importFiles();
 
 		// Init threads
 		for (Team t : teams) {
@@ -77,6 +76,20 @@ public final class AmazingRace {
 		Main.Log("===================================");
 		Main.Log(markers.get(markers.size() - 1).getStandings());
 
+	}
+
+	/**
+	 * Import json files
+	 * @throws InterruptedException 
+	 */
+	private void importFiles() throws InterruptedException {
+		Thread readTeamThread = new Thread(AmazingRace.getInstance()::initTeams);
+		Thread readMarkersThread = new Thread(AmazingRace.getInstance()::initRouteMarkers);
+		readTeamThread.start();
+		readMarkersThread.start();
+		readTeamThread.join();
+		readMarkersThread.join();
+		
 	}
 
 	// -------------------------------------------------------------------
